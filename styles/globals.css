@@ -459,6 +459,7 @@ html {
   --color-logo: #393939;
   --color-search: #8E90A6;
   --color-dots: #64CCE3;
+  --color-backgr: #F2F2F5;
 
   --font-light: "Rubik-light",sans-serif;
   --font-regular: "Rubik-regular",sans-serif;
@@ -490,13 +491,25 @@ html{
 .wrapper{
   position:relative;
   min-height:100%;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
-.container{
+/* .container{
   max-width:1140px;
   margin: 0 auto;
-}
+} */
+
 .body{
   min-width:375px;
+}
+
+h1,h2,h3,h4,h5,p{
+  margin: 0;
+  padding: 0;
+}
+
+.list--reset{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
 }
