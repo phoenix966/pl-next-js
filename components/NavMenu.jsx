@@ -88,32 +88,32 @@ export default function NavMenu({show}) {
       {`
         .nav.active{
           position: absolute;
-          top: 130px;
+          top: 8.125rem;
           right: 0;
           z-index: 90;
-          width: 400px;
-          height: 600px;
+          width: 25rem;
+          height: 37.5rem;
           background: #FFFFFF;
-          box-shadow: inset 0px 2px 0px #2575E6;
+          box-shadow: inset 0 0.125rem 0 #2575E6;
           transition: 0.5s;
 
         }
         .nav{
           position: absolute;
-          top: 130px;
-          right: -900px;
+          top: 8.125rem;
+          right: -56.25rem;
           z-index: -2;
-          width: 400px;
+          width: 25rem;
           height: 100vh;
           background: #FFFFFF;
-          box-shadow: inset 0px 2px 0px #2575E6;
+          box-shadow: inset 0 0.125rem 0 #2575E6;
           transition: 0.5s;
         }
         .nav__menu{
           height: 100%;
           display: flex;
           justify-content: flex-start;
-          padding-top: 30px;
+          padding-top: 1.875rem;
           align-items: flex-start;
           flex-direction: column;
           z-index: 89;
@@ -124,7 +124,7 @@ export default function NavMenu({show}) {
         .nav__menu--open{
           display: unset;
           position: absolute;
-          top: 3px;
+          top: 0.1875rem;
           z-index: 99;
           background: #fff;
           width: 100%;
@@ -139,21 +139,21 @@ export default function NavMenu({show}) {
           text-decoration: none;
           color: var(--color-logo);
           font-family: var(--font-regular);
-          font-size: 18px;
+          font-size: 1.125rem;
         }
         .nav__row--main{
-          margin-bottom: 40px;
+          margin-bottom: 2.5rem;
         }
         .nav__row--main .nav__link{
           position: relative;
           color: var(--color-main);
-          font-size: 24px;
+          font-size: 1.5rem;
           text-transform: uppercase;
         }
         .nav__row--main .nav__link span{
           position: absolute;
           top: 0;
-          left: -40px;
+          left: -2.5rem;
         }
         
       `}

@@ -1,6 +1,6 @@
 .header{
   position: relative;
-  height: 130px;
+  height: 8.125rem;
   background: #FFFFFF;
   /* border: 2px solid #666; */
 }
@@ -11,11 +11,11 @@
   justify-content: space-between;
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0 40px 0 0;
+  padding: 0 2.5rem 0 0;
   /* box-shadow: 0px 5px 60px rgba(150, 6, 6, 0.05); */
 }
 .header__wrapper{
-  width: 390px;
+  width: 24.375rem;
   display: flex;
   align-items: center;
   justify-content: space-between;

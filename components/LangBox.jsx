@@ -14,12 +14,12 @@ export default function LangBox() {
             justify-content: center;
             align-items: center;
             position: absolute;
-            top: 40px;
-            right: -20px;
+            top: 2.5rem;
+            right: -1.25rem;
             transform: rotateZ(45deg);
             box-sizing: border-box;
-            width: 49px;
-            height: 49px;
+            width: 3.0625rem;
+            height: 3.0625rem;
             background: rgba(242, 242, 245, 0.4);
 
           }
@@ -27,8 +27,8 @@ export default function LangBox() {
             display: flex;
             justify-content: center;
             align-items: center;
-            width: 41px;
-            height: 41px;
+            width: 2.5625rem;
+            height: 2.5625rem;
             background: var(--color-backgr);
             border: none;
             cursor: pointer;
@@ -37,9 +37,9 @@ export default function LangBox() {
           .lang__text{
             color: #39393980;
             font-family: var(--font-regular);
-            font-size: 12px;
+            font-size: 0.75rem;
             transform: rotateZ(-45deg);
-            padding-right: 20px;
+            padding-right: 1.25rem;
           }
         `}
       </style>

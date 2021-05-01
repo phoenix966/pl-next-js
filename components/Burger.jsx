@@ -16,16 +16,16 @@ export default function Burger() {
         {`
           .burger{
             position: relative;
-            width: 24px;
-            height: 19px;
+            width: 1.5rem;
+            height: 1.1875rem;
           }
           .burger:hover{
             cursor: pointer;
           }
           .burger__row{
             position: absolute;
-            width: 24px;
-            height: 3px;
+            width: 1.5rem;
+            height: 0.1875rem;
             background: var(--color-logo)
           }
           .burger__row:nth-of-type(1){
@@ -34,14 +34,14 @@ export default function Burger() {
             transition: 0.4s;
           }
           .burger__row:nth-of-type(2){
-            width: 16px;
-            height: 3px;
-            top: 8px;
+            width: 1rem;
+            height: 0.1875rem;
+            top: 0.5rem;
             left: 0;
             transition: 0.2s;
           }
           .burger__row:nth-of-type(3){
-            top: 16px;
+            top: 1rem;
             left: 0;
             transition: 0.4s;
           }
