@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Layout from '../containers/Layout'
 import Main from '../containers/Main'
+import PostSection from '../containers/PostSection'
 
 export default function Home() {
   return (
@@ -13,6 +14,7 @@ export default function Home() {
       <div className="wrapper">
         <Layout>
           <Main/>
+          <PostSection/>
         </Layout>
       </div>
     </>

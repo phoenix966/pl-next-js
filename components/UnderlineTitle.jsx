@@ -20,6 +20,7 @@ export default function UnderlineTitle({text,color,fontSize,underWidthProcent,un
             background: var(--color-main);
             width: ${underWidthProcent}%;
             height: ${underHeightPx}px;
+            border-radius: 78px;
           }
         `}
       </style>

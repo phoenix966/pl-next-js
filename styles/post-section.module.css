@@ -1,0 +1,14 @@
+.postSection{
+  padding-top: 100px;
+  background: pink;
+  height: 60vh;
+}
+.postSection__container{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.PostSection__wrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
