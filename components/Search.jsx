@@ -15,23 +15,26 @@ export default function Search() {
       </form>
       <style jsx>
       {`
+        .search{
+          padding: 0 20px;
+        }
         .search__wrap{
           display: flex;
           align-items: center;
           justify-content: center;
         }
         .search__wrapper{
-          width: 14.5rem;
-          height: 2.5rem
+          display: none;
         }
         .search__input{
           padding-left: 0.625rem;
           width: 100%;
-          height: 2.37rem;
+          height: 2.5rem;
           font-family: var(--font-light);
           font-size: 1rem;
-          color: #8E90A6;
+          color: var(--color-search);
           border: none;
+          box-sizing: border-box;
           border-radius: 0.5rem 0 0 0.5rem;
           background: var(--color-backgr);
         }
@@ -41,12 +44,22 @@ export default function Search() {
           justify-content: center;
           cursor: pointer;
           font-size: 1rem;
-          margin-left: 0.75rem;
           width: 2.5rem;
           height: 2.5rem;
-          border-radius: 0 0.5rem 0.5rem 0;
+          box-sizing: border-box;
+          border-radius: 0.5rem;
           background: var(--color-backgr);
           border: none;
+        }
+        @media screen and (min-width: 798px){
+          .search__wrapper{
+            display: unset;
+            width: 14.5rem;
+            height: 2.5rem
+          }
+          .search__btn{
+            border-radius: 0 0.5rem 0.5rem 0;
+          }
         }
       `}
       </style>

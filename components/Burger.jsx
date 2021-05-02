@@ -28,6 +28,9 @@ export default function Burger() {
             height: 0.1875rem;
             background: var(--color-logo)
           }
+          .burger__row{
+            cursor: pointer;
+          }
           .burger__row:nth-of-type(1){
             top: 0;
             left: 0;

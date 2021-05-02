@@ -14,8 +14,8 @@ export default function LangBox() {
             justify-content: center;
             align-items: center;
             position: absolute;
-            top: 2.5rem;
-            right: -1.25rem;
+            top: -1.5rem;
+            right: 7.5rem;
             transform: rotateZ(45deg);
             box-sizing: border-box;
             width: 3.0625rem;
@@ -39,7 +39,19 @@ export default function LangBox() {
             font-family: var(--font-regular);
             font-size: 0.75rem;
             transform: rotateZ(-45deg);
-            padding-right: 1.25rem;
+            padding-top: 1.25rem;
+          }
+          @media screen and (min-width: 728px){
+            .lang{
+              position: absolute;
+              top: 2.5rem;
+              right: -1.5rem;
+            }
+            .lang__text{
+              padding-right: 1.25rem;
+              transform: rotateZ(-45deg);
+              padding-top: 0;
+            }
           }
         `}
       </style>

@@ -104,7 +104,7 @@ export default function NavMenu({show}) {
           right: -56.25rem;
           z-index: -2;
           width: 25rem;
-          height: 100vh;
+          height: 80vh;
           background: #FFFFFF;
           box-shadow: inset 0 0.125rem 0 #2575E6;
           transition: 0.5s;
@@ -114,10 +114,11 @@ export default function NavMenu({show}) {
           display: flex;
           justify-content: flex-start;
           padding-top: 1.875rem;
-          align-items: flex-start;
+          align-items: center;
           flex-direction: column;
           z-index: 89;
         }
+        
         .nav__menu--closed{
           display: none;
         }
@@ -131,7 +132,6 @@ export default function NavMenu({show}) {
         }
         .nav__row{
           margin: 20px;
-          padding-left: 40px;
         }
         .nav__link{
           display: flex;
@@ -154,6 +154,14 @@ export default function NavMenu({show}) {
           position: absolute;
           top: 0;
           left: -2.5rem;
+        }
+        @media screen and (min-width: 428px){
+          .nav__menu{
+            align-items: flex-start;
+          }
+          .nav__row{
+            padding-left: 2.5rem;
+          }
         }
         
       `}
