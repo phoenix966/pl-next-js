@@ -1,6 +1,7 @@
 import UnderlineTitle from '../components/UnderlineTitle'
 import Button from '../components/Button'
 import style from '../styles/post-section.module.css'
+import Post from '../components/Post'
 
 export default function PostSection() {
   return (
@@ -24,7 +25,7 @@ export default function PostSection() {
             borderRadius="12"
           />
         </div>
-        
+        <Post/>
       </div>
       
     </section>
