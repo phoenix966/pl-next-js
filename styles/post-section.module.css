@@ -1,7 +1,6 @@
 .postSection{
   padding-top: 6.25rem;
-  background: pink;
-  min-height: 60vh;
+  min-height: 100vh;
   margin-bottom: 6.25rem;
 
 }
@@ -14,4 +13,14 @@
   justify-content: space-between;
   align-items: center;
   margin-bottom: 5.625rem;
+}
+.post__columns{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-wrap: wrap;
 }

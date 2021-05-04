@@ -25,7 +25,13 @@ export default function PostSection() {
             borderRadius="12"
           />
         </div>
-        <Post/>
+        <ul className={style.post__columns}>
+          <Post/>
+          <Post/>
+          <Post/>
+          <Post/>
+          <Post/>
+        </ul>
       </div>
       
     </section>

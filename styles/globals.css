@@ -376,80 +376,83 @@ template {
   font-style: normal;
   font-display: swap;
 }
+
 @font-face {
-  font-family: "icomoon";
-  src: url("../assets/fonts/icomoon/icomoon.eot?h77me5");
-  src: url("../assets/fonts/icomoon/icomoon.eot?h77me5#iefix") format("embedded-opentype"), url("../assets/fonts/icomoon/icomoon.ttf?h77me5") format("truetype"), url("../assets/fonts/icomoon/icomoon.woff?h77me5") format("woff"), url("../assets/fonts/icomoon/icomoon.svg?h77me5#icomoon") format("svg");
+  font-family: 'icomoon';
+  src:  url('../assets/fonts/icomoon/icomoon.eot?amhojn');
+  src:  url('../assets/fonts/icomoon/icomoon.eot?amhojn#iefix') format('embedded-opentype'),
+    url('../assets/fonts/icomoon/icomoon.ttf?amhojn') format('truetype'),
+    url('../assets/fonts/icomoon/icomoon.woff?amhojn') format('woff'),
+    url('../assets/fonts/icomoon/icomoon.svg?amhojn#icomoon') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
 }
-[class^=icon-], [class*=" icon-"] {
+
+[class^="icon-"], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: "icomoon" !important;
+  font-family: 'icomoon' !important;
   speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
+
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 .icon-dialog:before {
-  content: "";
+  content: "\e900";
 }
-
 .icon-arrow-left:before {
-  content: "";
+  content: "\e901";
 }
-
 .icon-arrow-right:before {
-  content: "";
+  content: "\e902";
 }
-
 .icon-calendar:before {
-  content: "";
+  content: "\e903";
 }
-
 .icon-chevron-left:before {
-  content: "";
+  content: "\e90c";
 }
-
 .icon-chevron-right:before {
-  content: "";
+  content: "\e904";
 }
-
 .icon-clock:before {
-  content: "";
-  color: #fff;
+  content: "\e905";
 }
-
 .icon-eye:before {
-  content: "";
+  content: "\e906";
 }
-
 .icon-facebook:before {
-  content: "";
+  content: "\e907";
 }
-
 .icon-instagram:before {
-  content: "";
+  content: "\e908";
 }
-
 .icon-search:before {
-  content: "";
+  content: "\e909";
 }
-
 .icon-twitter:before {
-  content: "";
+  content: "\e90a";
+}
+.icon-user:before {
+  content: "\e90b";
+}
+.icon-star-empty:before {
+  content: "\e9d7";
+}
+.icon-star-half:before {
+  content: "\e9d8";
+}
+.icon-star-full:before {
+  content: "\e9d9";
 }
 
-.icon-user:before {
-  content: "";
-}
 
 html {
   --color-main: #2575E6;
