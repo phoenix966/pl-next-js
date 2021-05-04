@@ -1,5 +1,5 @@
 
-export default function Button({text,fontSize,color,background,paddingVertical,paddingHorizont,borderColor,borderRadius}) {
+export default function Button({text,fontSize,color,background,paddingVertical,paddingHorizont,borderColor,borderRadius,margin}) {
   return (
     <>
       <a href="#bt" className="button">{text}</a>
@@ -16,6 +16,7 @@ export default function Button({text,fontSize,color,background,paddingVertical,p
             padding: ${paddingVertical}px ${paddingHorizont}px;
             border: 1px solid ${borderColor};
             border-radius: ${borderRadius}px;
+            margin: ${margin}px;
           }
         `}
       </style>

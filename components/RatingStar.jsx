@@ -1,5 +1,6 @@
 
-export default function RatingStar() {
+export default function RatingStar({rate}) {
+  const rating = rate;
   return (
     <div className="rating">
       <div className="rating__stars">
@@ -29,7 +30,7 @@ export default function RatingStar() {
             content: '';
             position: absolute;
             top: 40px;
-            left: 0;
+            left: -5px;
             width: 130%;
             height: 1px;
             background: #D6D8E5;

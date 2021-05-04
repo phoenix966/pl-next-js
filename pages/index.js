@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Layout from '../containers/Layout'
 import Main from '../containers/Main'
+import News from '../containers/News'
 import PostSection from '../containers/PostSection'
 
 export default function Home() {
@@ -15,6 +16,7 @@ export default function Home() {
         <Layout>
           <Main/>
           <PostSection/>
+          <News/>
         </Layout>
       </div>
     </>

@@ -2,8 +2,17 @@ import UnderlineTitle from '../components/UnderlineTitle'
 import Button from '../components/Button'
 import style from '../styles/post-section.module.css'
 import Post from '../components/Post'
+import {useState} from 'react';
 
 export default function PostSection() {
+  const [post,setPost] = useState([
+    {imgSrc:'/post-back.jpeg',title:'Веб программирование',user:'2454',clock:'12ч. 28м',rating:'3',key:1},
+    {imgSrc:'/post-back-2.jpg',title:'Веб программирование',user:'2454',clock:'12ч. 28м',rating:'3',key:2},
+    {imgSrc:'/post-back.jpeg',title:'Веб программирование',user:'2454',clock:'12ч. 28м',rating:'3',key:3},
+    {imgSrc:'/post-back-2.jpg',title:'Веб программирование',user:'2454',clock:'12ч. 28м',rating:'3',key:4},
+    {imgSrc:'/post-back.jpeg',title:'Веб программирование',user:'2454',clock:'12ч. 28м',rating:'3',key:5},
+    {imgSrc:'/post-back-2.jpg',title:'Веб программирование',user:'2454',clock:'12ч. 28м',rating:'3',key:6},
+  ])
   return (
     <section className={style.postSection}>
       <div className={style.postSection__container}>
@@ -26,11 +35,15 @@ export default function PostSection() {
           />
         </div>
         <ul className={style.post__columns}>
-          <Post/>
-          <Post/>
-          <Post/>
-          <Post/>
-          <Post/>
+          {post.map((item)=>{
+            return <Post 
+                      imgSrc={item.imgSrc}
+                      title={item.title}
+                      user={item.user}
+                      clock={item.clock}
+                      rating={item.rating}
+                    />
+            })}
         </ul>
       </div>
       

@@ -1,19 +1,19 @@
 import RatingStar from '../components/RatingStar'
 
-export default function Post() {
+export default function Post({imgSrc,title,user,clock,rating}) {
   return (
     <li className='post'>
       <div className="post__picture">
-        <img src="/post-back.jpeg" alt="img" className="post__img"/>
+        <img src={imgSrc} alt="img" className="post__img"/>
       </div>
-      <h2 className="post__title">Веб программирование</h2>
-      <RatingStar/>
+      <h2 className="post__title">{title}</h2>
+      <RatingStar rate={rating}/>
       <div className="post__wrap">
         <span className="icon-user post__icon">
-          <span>2454</span>
+          <span>{user}</span>
         </span>
         <span className="icon-clock post__icon">
-          <span>12ч. 28м</span>
+          <span>{clock}</span>
         </span>
       </div>
       <style jsx>
@@ -25,10 +25,11 @@ export default function Post() {
             flex-direction: column;
             align-items: flex-start;
             justify-content: space-between;
-            margin: 15px;
+            margin-bottom: 40px;
             border-radius: 25px;
             overflow: hidden;
-            box-shadow: 10px 10px 21px 0px rgba(0,0,0,0.1);
+            background: #fff;
+            box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
           }
           .post__picture{
             height: 55%;
