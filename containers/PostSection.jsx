@@ -42,6 +42,7 @@ export default function PostSection() {
                       user={item.user}
                       clock={item.clock}
                       rating={item.rating}
+                      key={item.key}
                     />
             })}
         </ul>

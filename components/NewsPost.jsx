@@ -1,22 +1,22 @@
 import Button from '../components/Button'
 
-export default function NewsPost() {
+export default function NewsPost({title,imgSrc,view,date}) {
   return (
     <li className="news-post">
       <div className="news-post__picture">
-        <img src="/news-back.jpg" alt="news" className="news-post__img"/>
+        <img src={imgSrc} alt="news" className="news-post__img"/>
         <div className="news-post__wrapper">
           <div className="news-post__text">
             <span className="icon-eye"></span>
-            2454
+            {view}
           </div>
           <div className="news-post__text">
             <span className="icon-calendar"></span>
-            14/04/2021
+            {date}
           </div>
         </div>
       </div>
-      <p className="news-post__title">Состоялось открытие нового It направления</p>
+      <p className="news-post__title">{title}</p>
       <Button 
             text="Подробнее..."
             fontSize="16"
@@ -34,11 +34,11 @@ export default function NewsPost() {
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
-                width: 350px;
-                height: 415px;
-                border-radius: 25px;
+                width: 21.875rem;
+                height: 25.9375rem;
+                border-radius: 1.5625rem;
                 background: #FFFFFF;
-                box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+                box-shadow: 0px 0px 1.875rem rgba(0, 0, 0, 0.1);
                 overflow: hidden;
               }
               .news-post__picture{
@@ -50,13 +50,13 @@ export default function NewsPost() {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
-                border-top-left-radius: 25px;
-                border-top-right-radius: 25px;
+                border-top-left-radius: 1.5625rem;
+                border-top-right-radius: 1.5625rem;
               }
               .news-post__wrapper{
                 position: absolute;
                 width: 100%;
-                bottom: 30px;
+                bottom: 1.875rem;
                 left: 0;
                 display: flex;
                 justify-content: space-between;
@@ -66,18 +66,18 @@ export default function NewsPost() {
                 justify-content: center;
                 align-items: center;
                 background: #00000080;
-                margin: 0 10px;
+                margin: 0 0.625rem;
                 color: #fff;
-                padding: 10px 15px;
-                border-radius: 5px;
+                padding: 0.625rem 0.9375rem;
+                border-radius: 0.3125rem;
               }
               .news-post__text span{
-                margin-right: 6px;
+                margin-right: 0.375rem;
               }
               .news-post__title{
                 font-family: var(--font-bold);
-                font-size: 20px;
-                padding: 0 15px;
+                font-size: 1.25rem;
+                padding: 0 0.9375rem;
                 color: var(--color-second);
               }
             `}
