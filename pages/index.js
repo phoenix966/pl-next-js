@@ -1,7 +1,9 @@
 import Head from 'next/head'
+import Comments from '../containers/Comments'
 import Layout from '../containers/Layout'
 import Main from '../containers/Main'
 import News from '../containers/News'
+import Partners from '../containers/Partners'
 import PostSection from '../containers/PostSection'
 
 export default function Home() {
@@ -16,7 +18,9 @@ export default function Home() {
         <Layout>
           <Main/>
           <PostSection/>
+          <Comments/>
           <News/>
+          <Partners/>
         </Layout>
       </div>
     </>

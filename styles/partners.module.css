@@ -1,0 +1,16 @@
+.info{
+  height: 50vh;
+}
+.info__container{
+  max-width: 1140px;
+  margin: 0 auto;
+}
+.info__row{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 100px;
+}
+.info__wrapper{
+  border: 1px solid red;
+}

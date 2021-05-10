@@ -3,7 +3,7 @@ import Button from '../components/Button'
 
 export default function Footer() {
   return (
-    <div className={style.footer}>
+    <footer className={style.footer}>
       <div className={style.footer__container}>
           <ul className={style.footer__columns}>
             <li className={style.footer__item}>
@@ -41,6 +41,6 @@ export default function Footer() {
             </li>
           </ul>
       </div>
-    </div>
+    </footer>
   )
 }

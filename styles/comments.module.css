@@ -1,0 +1,13 @@
+.comments{
+  padding-top: 100px;
+  height: 1000px;
+  background: var(--color-back);
+}
+.comments__container{
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 100px;
+}
