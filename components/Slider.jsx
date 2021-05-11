@@ -7,6 +7,7 @@ import Arrow from '../components/Arrow';
 export default function Slider() {
   const sliderRef = useRef();
 
+  console.log(sliderRef.current);
   const slideNextToggle = () => {
     // sliderRef.current
     sliderRef.current.swiper.slideNext();
@@ -15,7 +16,7 @@ export default function Slider() {
     // sliderRef.current
     sliderRef.current.swiper.slidePrev();
   }
-
+  console.log(SwiperSlide);
   return (
     <>
       <div className='slide'>
