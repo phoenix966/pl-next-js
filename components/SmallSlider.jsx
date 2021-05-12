@@ -12,7 +12,7 @@ export default function SmallSlider() {
   return (
     <div className="slider">
       <Swiper
-        spaceBetween={30}
+        spaceBetween={100}
         slidesPerView={5}
         // onSlideChange={() => console.log('slide change')}
         // onSwiper={(swiper) => console.log(swiper)}
@@ -85,6 +85,13 @@ export default function SmallSlider() {
           }}
         </SwiperSlide>
       </Swiper>
+      <style jsx>
+        {`
+          .slide{
+            margin: 0 auto;
+          }
+        `}
+      </style>
     </div>
   )
 }

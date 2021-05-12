@@ -20,9 +20,10 @@ export default function PostSection() {
           <UnderlineTitle
             text="Профессии"
             color="#000"
-            fontSize="42"
+            fontSize="36"
             underWidthProcent="80"
             underHeightPx="5"
+            mediaSize="42"
           />
           <Button 
             text="Все курсы"

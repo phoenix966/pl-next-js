@@ -3,20 +3,16 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import Slide from './Slide';
 import Arrow from '../components/Arrow';
+import {FaArrowLeft,FaArrowRight} from 'react-icons/fa';
 
 export default function Slider() {
   const sliderRef = useRef();
-
-  console.log(sliderRef.current);
   const slideNextToggle = () => {
-    // sliderRef.current
     sliderRef.current.swiper.slideNext();
   }
   const slidePrevToggle = () => {
-    // sliderRef.current
     sliderRef.current.swiper.slidePrev();
   }
-  console.log(SwiperSlide);
   return (
     <>
       <div className='slide'>
@@ -30,8 +26,8 @@ export default function Slider() {
           ref={sliderRef}
           spaceBetween={50}
           slidesPerView={1}
-          onSlideChange={() => console.log('slide change')}
-          onSwiper={(swiper) => console.log(swiper)}
+          // onSlideChange={() => console.log('slide change')}
+          // onSwiper={(swiper) => console.log(swiper)}
           loop={true}
         >
           <SwiperSlide>
@@ -53,13 +49,13 @@ export default function Slider() {
         </Swiper>
       </div>
       <div className="slide__row">
-        <button className="slide__btn" onClick={slideNextToggle}>next</button>
+        <button className="slide__btn" onClick={slideNextToggle}><FaArrowLeft/></button>
         <div className="slide__numbers">
           <span className="slide__number">1</span>
           <span className="slide__symbol">/</span>
           <span className="slide__number--small">15</span>
         </div>
-        <button className="slide__btn" onClick={slidePrevToggle}>prev</button>
+        <button className="slide__btn" onClick={slidePrevToggle}><FaArrowRight/></button>
       </div>
       <style jsx>
         {`
@@ -88,6 +84,18 @@ export default function Slider() {
          }
          .slide__btn{
            margin: 0 10px;
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           border: 2px solid var(--color-main);
+           color: var(--color-main);
+           border-radius: 5px;
+           padding: 14px 17px;
+         }
+         .slide__btn:hover{
+            background: var(--color-main);
+            color: #fff;
+            cursor: pointer;
          }
          .slide__numbers{
            display: flex;

@@ -17,9 +17,10 @@ export default function News() {
             <UnderlineTitle
               text="Новостной блог"
               color="#000"
-              fontSize="48"
-              underWidthProcent="40"
+              fontSize="38"
+              underWidthProcent="38"
               underHeightPx="8"
+              mediaSize="48"
             />
           </div>
           <ul className={style.news__columns}>

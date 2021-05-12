@@ -1,5 +1,5 @@
 
-export default function UnderlineTitle({text,color,fontSize,underWidthProcent,underHeightPx}) {
+export default function UnderlineTitle({text,color,fontSize,underWidthProcent,underHeightPx,mediaSize}) {
 
   return (
     <>
@@ -11,6 +11,7 @@ export default function UnderlineTitle({text,color,fontSize,underWidthProcent,un
             font-family: var(--font-medium);
             color: ${color};
             font-size: ${fontSize}px;
+            margin-bottom: 25px;
           }
           .underline__title::after{
             content: '';
@@ -21,6 +22,11 @@ export default function UnderlineTitle({text,color,fontSize,underWidthProcent,un
             width: ${underWidthProcent}%;
             height: ${underHeightPx}px;
             border-radius: 78px;
+          }
+          @media screen and (min-width: 768px){
+            .underline__title{
+              font-size: ${mediaSize}px;
+            }
           }
         `}
       </style>

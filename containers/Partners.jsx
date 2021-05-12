@@ -10,9 +10,10 @@ export default function Partners() {
         <UnderlineTitle
               text="Наши партнеры"
               color="#000"
-              fontSize="40"
+              fontSize="34"
               underWidthProcent="90"
               underHeightPx="5"
+              mediaSize="40"
             />
         </div>
         <div className={style.info__wrapper}>
