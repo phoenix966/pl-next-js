@@ -6,7 +6,7 @@ export default function SmallSlide({img,filter}) {
       <style jsx>
         {`
           .slider__wrap{
-            width: 130px;
+            
           }
           .slider__logo{
             width: 100%;

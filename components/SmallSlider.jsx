@@ -18,6 +18,20 @@ export default function SmallSlider() {
         // onSwiper={(swiper) => console.log(swiper)}
         loop={true}
         centeredSlides={true}
+        // breakpoints={{
+        //   400: {
+        //     slidesPerView: 3,
+        //     spaceBetween: 40
+        //   },
+        //   640: {
+        //     slidesPerView: 5,
+        //     spaceBetween: 40
+        //   },
+        //   828: {
+        //     slidesPerView: 5,
+        //     spaceBetween: 100,
+        //   }
+        // }}
       >
         <SwiperSlide>
           {({ isActive }) => {
