@@ -376,6 +376,14 @@ template {
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: 'Inter';
+  src: url('../assets/fonts/inter/Inter-Regular.woff2') format('woff2'),
+      url('../assets/fonts/inter/Inter-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
 
 @font-face {
   font-family: 'icomoon';
@@ -464,11 +472,13 @@ html {
   --color-dots: #64CCE3;
   --color-backgr: #F2F2F5;
   --color-body: #E5E5E5;
+  --color-crumbs: #28293D;
 
   --font-light: "Rubik-light",sans-serif;
   --font-regular: "Rubik-regular",sans-serif;
   --font-medium: "Rubik-medium",sans-serif;
   --font-bold: "Rubik-bold",sans-serif;
+  --font-crumbs: 'Inter',sans-serif;
 }
 
 html, body {
@@ -494,7 +504,7 @@ html{
 }
 .wrapper{
   position:relative;
-  min-height:100%;
+  min-height: 100%;
   overflow: hidden;
 }
 

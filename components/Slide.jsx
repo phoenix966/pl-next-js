@@ -1,5 +1,5 @@
 
-export default function Slide({img}) {
+export default function Slide({ img }) {
   return (
     <div className="slide__box">
       <div className="slide__picture">
@@ -35,13 +35,16 @@ export default function Slide({img}) {
             object-fit: cover;
           }
           .slide__box{
+            position: relative;
             padding: 0 20px 20px 20px;
-            width: 647px;
-            height: 367px;
+            width: 54vw;
+            height: 56vh;
             margin: 0 auto;
+            margin-bottom: 45px;
             background: #FFFFFF;
             box-shadow: 0px 4.53741px 18.1496px #F2F5FA, 0px 4.53741px 18.1496px #F2F5FA, 0px 4.53741px 18.1496px #F2F5FA;
             border-radius: 25px;
+            border: 1px solid blue;
           }
           .slide__title{
             font-family: var(--font-medium);
@@ -54,16 +57,23 @@ export default function Slide({img}) {
             font-family: var(--font-light);
             color: #858688;
             font-size: 14px;
+            height: 25vh;
+            margin: 0 auto;
+            overflow-x: scroll;
           }
           .slide__wrapper span{
             color: var(--color-main);
+            margin: 0 4px;
           }
           .slide__wrapper{
             margin-bottom: 20px;
           }
-          .slide__wrapper span{
-            margin: 0 4px;
+          .slide__wrap{
+            margin: 0 auto;
+            width: 51vw;
+            border: 1px solid red;
           }
+          
         `}
       </style>
     </div>

@@ -22,9 +22,9 @@ export default function Footer() {
             </li>
             <li className={style.footer__item}>
               <h1 className={style.footer__title}>Соц сети</h1>
-              <p className={style.footer__text}><span className=""></span>Instagram</p>
-              <p className={style.footer__text}><span className=""></span>Facebook</p>
-              <p className={style.footer__text}><span className=""></span>Twitter</p>
+              <p className={style.footer__text}><span className="icon-instagram footer__icon"></span>Instagram</p>
+              <p className={style.footer__text}><span className="icon-facebook footer__icon"></span>Facebook</p>
+              <p className={style.footer__text}><span className="icon-twitter footer__icon"></span>Twitter</p>
             </li>
             <li className={style.footer__item}>
               <h1 className={style.footer__title}>Онлайн заявка</h1>
@@ -41,6 +41,13 @@ export default function Footer() {
             </li>
           </ul>
       </div>
+      <style jsx>
+        {`
+          .footer__icon{
+            margin-right: 0.625rem;
+          }
+        `}
+      </style>
     </footer>
   )
 }

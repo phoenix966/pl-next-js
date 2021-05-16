@@ -1,6 +1,6 @@
 import Button from '../components/Button'
 
-export default function NewsPost({title,imgSrc,view,date}) {
+export default function NewsPost({title,imgSrc,view,date,margin}) {
   return (
     <li className="news-post">
       <div className="news-post__picture">
@@ -40,6 +40,7 @@ export default function NewsPost({title,imgSrc,view,date}) {
                 background: #FFFFFF;
                 box-shadow: 0px 0px 1.875rem rgba(0, 0, 0, 0.1);
                 overflow: hidden;
+                margin-bottom: ${margin}px;
               }
               .news-post__picture{
                 position: relative;

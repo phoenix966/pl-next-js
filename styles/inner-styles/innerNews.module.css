@@ -1,0 +1,33 @@
+.innerNews{
+  /* min-height: 60vh; */
+}
+.innerNews__container{
+  display: flex;
+  justify-content: space-between;
+  max-width: 1140px;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+.innerNews__wrapper{
+  margin-right: 50px;
+  flex: 1 1 50%;
+}
+.innerNews__text{
+  font-family: var(--font-regular);
+  color: var(--color-crumbs);
+  font-size: 1rem;
+  line-height: 160%;
+  letter-spacing: 0.06em;
+}
+.innerNews__wrap{
+  margin-bottom: 2.8125rem;
+}
+
+.innerNews__box{
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 10%;
+}
+.innerNews__underline{
+  margin-bottom: 50px;
+}

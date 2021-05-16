@@ -36,8 +36,8 @@ export default function NavMenu({show}) {
           </Link>
         </li>
         <li className="nav__row">
-          <Link href="#fg">
-            <a  className="nav__link">Абитуриентам</a>
+          <Link href="/inner">
+            <a  className="nav__link">Внутренняя страница</a>
           </Link>
         </li>
         <li className="nav__row">
@@ -104,7 +104,7 @@ export default function NavMenu({show}) {
           right: -56.25rem;
           z-index: -2;
           width: 25rem;
-          height: 80vh;
+          height: 280vh;
           background: #FFFFFF;
           box-shadow: inset 0 0.125rem 0 #2575E6;
           transition: 0.5s;

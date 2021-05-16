@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import Slide from './Slide';
 import Arrow from '../components/Arrow';
-import {FaArrowLeft,FaArrowRight} from 'react-icons/fa';
+import { FaArrowLeft, FaArrowRight, FaArrowCircleDown } from 'react-icons/fa';
 
 export default function Slider() {
   const sliderRef = useRef();
@@ -17,10 +17,10 @@ export default function Slider() {
     <>
       <div className='slide'>
         <div className='slide__arrow--left'>
-          <Arrow/>
+          <Arrow />
         </div>
         <div className='slide__arrow--right'>
-          <Arrow/>
+          <Arrow />
         </div>
         <Swiper
           ref={sliderRef}
@@ -48,34 +48,40 @@ export default function Slider() {
 
         </Swiper>
       </div>
+      <div className="slide__icon">
+        <FaArrowCircleDown />
+      </div>
       <div className="slide__row">
-        <button className="slide__btn" onClick={slideNextToggle}><FaArrowLeft/></button>
+        <button className="slide__btn" onClick={slideNextToggle}><FaArrowLeft /></button>
         <div className="slide__numbers">
           <span className="slide__number">1</span>
           <span className="slide__symbol">/</span>
           <span className="slide__number--small">15</span>
         </div>
-        <button className="slide__btn" onClick={slidePrevToggle}><FaArrowRight/></button>
+        <button className="slide__btn" onClick={slidePrevToggle}><FaArrowRight /></button>
       </div>
       <style jsx>
         {`
          .slide{
            position: relative;
            box-sizing: border-box;
-           width: 797px;
            margin: 0 auto;
            display: flex;
            justify-content: center;
            align-items: center;
            background: var(--color-back);
            margin-bottom: 20px;
+           width: 65vw;
+           border: 1px solid #000;
          }
          .slide__wrap{
            padding-top: 50px;
-           width: 795px;
+           width: 58vw;
+           height: 70vh;
            margin: 0 auto;
            text-align: center;
            background: var(--color-back);
+           border: 1px solid orange;
          }
          .slide__row{
            display: flex;
@@ -90,7 +96,7 @@ export default function Slider() {
            border: 2px solid var(--color-main);
            color: var(--color-main);
            border-radius: 5px;
-           padding: 14px 17px;
+           padding: 8px 17px;
          }
          .slide__btn:hover{
             background: var(--color-main);
@@ -109,17 +115,24 @@ export default function Slider() {
          }
          .slide__arrow--left{
            position: absolute;
-           top: 20px;
+           top: 15px;
            left: 20px;
-           z-index: 3;
+           z-index: 2;
          }
          .slide__arrow--right{
            position: absolute;
-           bottom: -29px;
-           right: 25px;
-           z-index: 3;
+           bottom: 10px;
+           right: 20px;
+           z-index: 2;
            transform: rotateZ(180deg);
          }
+         .slide__icon{
+            display: flex;
+            justify-content: center;
+            color: var(--color-main);
+            font-size:  32px;
+            margin-bottom: 20px;
+          }
          
         `}
       </style>
