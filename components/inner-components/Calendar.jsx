@@ -12,24 +12,25 @@ export default function Calendar() {
             display: flex;
             justify-content: center;
             align-items: center;
-            padding: 6px 11px;
+            padding: 0.375rem 0.6875rem;
             background: rgba(255, 255, 255, 0.3);
             drop-filter: blur(40px);
-            border-radius: 5px 5px 0px 0px;
+            border-radius: 0.3125rem 0.3125rem 0px 0px;
           }
           .calendar__icon{
-            font-size: 24px;
+            font-size: 1.5rem;
             color: #fff;
-            margin-right: 8px; 
+            margin-right: 0.5rem; 
             display: flex;
             justify-content: center;
             align-items: center;
           }
           .calendar__text{
             font-family: var(--font-light);
-            font-size: 16px;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            letter-spacing: 0.0938rem;
             color: #fff;
-            margin-left: 10px;
           }
         `}
       </style>

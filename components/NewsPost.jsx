@@ -22,7 +22,7 @@ export default function NewsPost({title,imgSrc,view,date,margin}) {
             fontSize="16"
             color="var(--color-main)"
             paddingVertical="15"
-            paddingHorizont="35"
+            paddingHorizont="92"
             borderColor="var(--color-main)"
             borderRadius="12"
             margin="20"
@@ -34,18 +34,20 @@ export default function NewsPost({title,imgSrc,view,date,margin}) {
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
-                width: 21.875rem;
-                height: 25.9375rem;
+                min-width: 350px;
+                min-height: 415px;
                 border-radius: 1.5625rem;
                 background: #FFFFFF;
                 box-shadow: 0px 0px 1.875rem rgba(0, 0, 0, 0.1);
                 overflow: hidden;
                 margin-bottom: ${margin}px;
+                margin: 10px;
               }
-              @media screen and (min-width: 728px){
+              
+              @media screen and (min-width: 1140px){
                 .news-post{
-                  width: 31.125rem;
-                  height: 35.3125rem;
+                  width: 498px;
+                  height: 565px;
                 }
               }
               .news-post__picture{
@@ -84,8 +86,10 @@ export default function NewsPost({title,imgSrc,view,date,margin}) {
                 font-size: 1.375rem;
               }
               .news-post__title{
+                width: 28.125rem;
                 font-family: var(--font-bold);
-                font-size: 1.25rem;
+                font-size: 1.375rem;
+                letter-spacing: 1.5px;
                 padding: 0 0.9375rem;
                 color: var(--color-second);
               }

@@ -17,6 +17,7 @@ export default function Social() {
             color: #fff;
             width: 24px;
             height: 112px;
+            margin-right: -10px;
           }
         `}
       </style>

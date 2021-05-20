@@ -8,7 +8,7 @@ export default function Inner() {
     <div className="wrapper">
       <Layout>
         <InnerInfo/>
-        <BreadCrumbs paddingTop="47" marginBottom="47"/>
+        <BreadCrumbs paddingTop="43" marginBottom="5"/>
         <InnerNews/>
       </Layout>
       <style jsx>

@@ -17,11 +17,18 @@
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-between;
-  /* flex-wrap: wrap; */
+  justify-content: center;
+  flex-wrap: wrap;
   margin-bottom: 4.375rem;
 }
 .news__wrap{
   display: flex;
   justify-content: center;
+}
+
+@media screen and (min-width: 1036px){
+  .news__columns{
+    justify-content: space-between;
+    padding: 0;
+  }
 }

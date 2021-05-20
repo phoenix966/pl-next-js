@@ -28,7 +28,7 @@ export default function Search() {
         }
         .search__input{
           padding-left: 0.8125rem;
-          width: 99.8%;
+          width: 100%;
           height: 2.5rem;
           font-family: var(--font-light);
           font-size: 1rem;

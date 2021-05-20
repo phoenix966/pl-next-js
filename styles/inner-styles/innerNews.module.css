@@ -1,6 +1,3 @@
-.innerNews{
-  /* min-height: 60vh; */
-}
 .innerNews__container{
   display: flex;
   justify-content: space-between;
@@ -9,8 +6,8 @@
   border: 1px solid red;
 }
 .innerNews__wrapper{
-  margin-right: 50px;
-  flex: 1 1 30%;
+  padding-top: 2.1875rem;
+  width: 58%;
 }
 .innerNews__text{
   font-family: var(--font-regular);
@@ -20,14 +17,13 @@
   letter-spacing: 0.06em;
 }
 .innerNews__wrap{
-  margin-bottom: 2.8125rem;
+  margin-bottom: 4.875rem;
 }
 
 .innerNews__box{
   display: flex;
   flex-direction: column;
-  flex: 1 1 10%;
 }
 .innerNews__underline{
-  margin-bottom: 50px;
+  margin-bottom: 1.25rem;
 }

@@ -10,7 +10,7 @@ export default function NavChevron() {
             justify-content: center;
             align-items: center;
             padding-top: 3px;
-            margin-right: 18px;
+            margin-right: 7px;
           }
           .nav__icon{
               color: #28293D;

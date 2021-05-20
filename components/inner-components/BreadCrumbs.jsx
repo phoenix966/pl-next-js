@@ -32,7 +32,7 @@ export default function BreadCrumbs({marginBottom,paddingTop}) {
               height: 31px;
             }
             .nav__container{
-              max-width: 1140px;
+              max-width:  1600px;
               padding-top: ${paddingTop}px;
               margin: 0 auto;
               margin-bottom: ${marginBottom}px;

@@ -1,7 +1,7 @@
 .header{
   position: relative;
   height: 8.125rem;
-  background: chartreuse;
+  /* background: chartreuse; */
   padding: 0 1.875rem 0 0;
 }
 .header__container{

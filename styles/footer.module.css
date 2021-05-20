@@ -1,10 +1,10 @@
 .footer{
   background: var(--color-back);
+  padding: 50px 0;
 }
 .footer__container{
-  max-width: 1140px;
+  max-width: 1600px;
   margin: 0 auto;
-  padding-top: 50px;
 }
 .footer__columns{
   list-style-type: none;
@@ -44,6 +44,7 @@
   font-family: var(--font-regular);
   font-size: 1.125rem;
   line-height: 1.3125rem;
+  letter-spacing: 2px;
   color: #26323880;
   margin-bottom: 0.625rem;
 }
