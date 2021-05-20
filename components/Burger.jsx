@@ -18,6 +18,7 @@ export default function Burger() {
             position: relative;
             width: 1.5rem;
             height: 1.1875rem;
+            margin-right: -1.125rem;
           }
           .burger:hover{
             cursor: pointer;
@@ -40,7 +41,7 @@ export default function Burger() {
             width: 1rem;
             height: 0.1875rem;
             top: 0.5rem;
-            left: 0;
+            right: 0;
             transition: 0.2s;
           }
           .burger__row:nth-of-type(3){

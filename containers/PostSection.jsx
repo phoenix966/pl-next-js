@@ -7,7 +7,7 @@ import {useState} from 'react';
 export default function PostSection() {
   const [post,setPost] = useState([
     {imgSrc:'/post-back.jpeg',title:'Веб программирование',user:'2454',clock:'12ч. 28м',rating:'3',key:1},
-    {imgSrc:'/post-back-2.jpg',title:'Веб программирование',user:'2454',clock:'12ч. 28м',rating:'3',key:2},
+    {imgSrc:'/post-back-2.jpg',title:'Специалист интернет технологий',user:'2454',clock:'12ч. 28м',rating:'3',key:2},
     {imgSrc:'/post-back.jpeg',title:'Веб программирование',user:'2454',clock:'12ч. 28м',rating:'3',key:3},
     {imgSrc:'/post-back-2.jpg',title:'Веб программирование',user:'2454',clock:'12ч. 28м',rating:'3',key:4},
     {imgSrc:'/post-back.jpeg',title:'Веб программирование',user:'2454',clock:'12ч. 28м',rating:'3',key:5},
@@ -30,7 +30,7 @@ export default function PostSection() {
             fontSize="16"
             color="var(--color-main)"
             paddingVertical="15"
-            paddingHorizont="35"
+            paddingHorizont="38"
             borderColor="var(--color-main)"
             borderRadius="12"
           />

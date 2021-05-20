@@ -20,7 +20,7 @@ export default function Logo({flex}) {
             flex: 1 1 ${flex};
           }
           .logo__wrapper{
-            margin-right: 10px;
+            margin-right: 1.0625rem;
           }
           .logo__column{
             display: flex;
@@ -32,8 +32,9 @@ export default function Logo({flex}) {
             display: none;
             font-family: var(--font-medium);
             font-size: 1.375rem;
+            line-height: 2.3169rem;
             color: var(--color-logo);
-            margin-bottom: 0.3125rem;
+            margin-bottom: 0.0156rem;
           }
           .logo__text{
             display: none;

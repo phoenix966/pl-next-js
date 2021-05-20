@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <header className={style.header}>
       <div className={style.header__container}>
-        <Logo flex="60%"/>
+        <Logo flex="110%"/>
         <div className={style.header__wrapper}>
           <Search/>
           <BurgerIcon/>

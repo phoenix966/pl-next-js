@@ -71,13 +71,15 @@ export default function Slider() {
            align-items: center;
            background: var(--color-back);
            margin-bottom: 20px;
+           padding-top: 50px;
+           height: 70vh;
            width: 65vw;
            border: 1px solid #000;
          }
          .slide__wrap{
-           padding-top: 50px;
-           width: 58vw;
-           height: 70vh;
+           padding-top: 64px;
+           width: 42vw;
+           height: 43vh;
            margin: 0 auto;
            text-align: center;
            background: var(--color-back);
@@ -87,6 +89,7 @@ export default function Slider() {
            display: flex;
            justify-content: center;
            align-items: center;
+           padding-bottom: 100px;
          }
          .slide__btn{
            margin: 0 10px;
@@ -115,14 +118,14 @@ export default function Slider() {
          }
          .slide__arrow--left{
            position: absolute;
-           top: 15px;
-           left: 20px;
+           top: 162px;
+           left: 180px;
            z-index: 2;
          }
          .slide__arrow--right{
            position: absolute;
-           bottom: 10px;
-           right: 20px;
+           bottom: 50px;
+           right: 175px;
            z-index: 2;
            transform: rotateZ(180deg);
          }

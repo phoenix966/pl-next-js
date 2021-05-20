@@ -92,7 +92,7 @@ export default function NavMenu({show}) {
           right: 0;
           z-index: 90;
           width: 25rem;
-          height: 37.5rem;
+          height: 100vh;
           background: #FFFFFF;
           box-shadow: inset 0 0.125rem 0 #2575E6;
           transition: 0.5s;
@@ -131,7 +131,7 @@ export default function NavMenu({show}) {
           width: 100%;
         }
         .nav__row{
-          margin: 20px;
+          margin: 1.25rem;
         }
         .nav__link{
           display: flex;

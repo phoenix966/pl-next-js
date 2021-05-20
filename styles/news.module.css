@@ -1,24 +1,24 @@
 .news{
-  padding-top: 6.25rem;
+  padding-top: 2.25rem;
   margin-bottom: 6.25rem;
 }
 .news__container{
-  max-width: 1140px;
+  max-width: 1600px;
   margin: 0 auto;
 }
 .news__wrapper{
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 5.625rem;
+  margin-bottom: 4.0625rem;
 }
 .news__columns{
   list-style-type: none;
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  justify-content: space-between;
+  /* flex-wrap: wrap; */
   margin-bottom: 4.375rem;
 }
 .news__wrap{

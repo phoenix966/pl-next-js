@@ -16,7 +16,7 @@ export default function Search() {
       <style jsx>
       {`
         .search{
-          padding: 0 20px;
+          padding: 0 1.25rem;
         }
         .search__wrap{
           display: flex;
@@ -27,8 +27,8 @@ export default function Search() {
           display: none;
         }
         .search__input{
-          padding-left: 0.625rem;
-          width: 100%;
+          padding-left: 0.8125rem;
+          width: 99.8%;
           height: 2.5rem;
           font-family: var(--font-light);
           font-size: 1rem;
@@ -54,7 +54,7 @@ export default function Search() {
         @media screen and (min-width: 798px){
           .search__wrapper{
             display: unset;
-            width: 14.5rem;
+            width: 11.8125rem;
             height: 2.5rem
           }
           .search__btn{

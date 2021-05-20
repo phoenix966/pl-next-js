@@ -19,11 +19,11 @@ export default function Slide({ img }) {
         {`
           .slide__picture{
             margin: 0 auto;
-            width: 100px;
-            height: 100px;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
             border: 1px solid #000;
-            transform: translateY(-50px);
+            transform: translateY(-64px);
             border: 5px solid #FFFFFF;
             box-sizing: border-box;
             filter: drop-shadow(0px 4.53741px 18.1496px #F2F5FA), drop-shadow(0px 4.53741px 18.1496px #F2F5FA), drop-shadow(0px 4.53741px 18.1496px #F2F5FA);
@@ -37,8 +37,8 @@ export default function Slide({ img }) {
           .slide__box{
             position: relative;
             padding: 0 20px 20px 20px;
-            width: 54vw;
-            height: 56vh;
+            width: 40vw;
+            height: 40vh;
             margin: 0 auto;
             margin-bottom: 45px;
             background: #FFFFFF;
@@ -50,14 +50,16 @@ export default function Slide({ img }) {
             font-family: var(--font-medium);
             color: var(--color-second);
             font-size: 18px;
-            line-height: 21px;
+            line-height: 21.33px;
             margin-bottom: 15px;
           }
           .slide__text{
             font-family: var(--font-light);
             color: #858688;
             font-size: 14px;
-            height: 25vh;
+            height: 20vh;
+            line-height: 23.8px;
+            letter-spacing: 2px;
             margin: 0 auto;
             overflow-x: scroll;
           }
@@ -65,12 +67,10 @@ export default function Slide({ img }) {
             color: var(--color-main);
             margin: 0 4px;
           }
-          .slide__wrapper{
-            margin-bottom: 20px;
-          }
           .slide__wrap{
             margin: 0 auto;
-            width: 51vw;
+            height: 26vh;
+            width: 34vw;
             border: 1px solid red;
           }
           

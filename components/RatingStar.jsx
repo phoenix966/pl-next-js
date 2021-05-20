@@ -16,33 +16,33 @@ export default function RatingStar({rate}) {
           .rating{
             display: flex;
             justify-content: space-between; 
-            padding: 0 15px;
+            padding: 0 2.1875rem;
           }
           .rating__stars{
             position: relative;
             display: flex;
             align-items: center;
             color: yellow;
-            font-size: 18px;
-            margin-bottom: 21px;
+            font-size: 1.125rem;
+            margin-bottom: 0.9375rem;
           }
           .rating__stars:after{
             content: '';
             position: absolute;
-            top: 40px;
-            left: -5px;
-            width: 130%;
-            height: 1px;
+            top: 2.5rem;
+            left: -0.3125rem;
+            width: 177%;
+            height: 0.0625rem;
             background: #D6D8E5;
           }
           .rating__stars span{
-            margin-right: 10px;
+            margin-right: 0.625rem;
           }
           .rating__text{
             font-family: var(--font-light);
-            font-size: 16px;
+            font-size: 1rem;
             color: #D6D8E5;
-            margin-left: 10px;
+            margin-left: 0.625rem;
           }
         `}
       </style>

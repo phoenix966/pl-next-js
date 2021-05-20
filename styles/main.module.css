@@ -1,10 +1,10 @@
 .main{
-  height: 80vh;
+  min-height: 45vh;
+  padding-top: 10.875rem;
   background: linear-gradient(270deg, rgba(37, 117, 230, 0) 0%, rgba(37, 117, 230, 0.5) 100%), url('../assets/images/main-back.jpg') top center /cover;
-  /* margin-bottom: 6.25rem; */
 }
 .main__container{
-  max-width: 1140px;
+  max-width: 1600px;
   height: 100%;
   margin: 0 auto;
   display: flex;

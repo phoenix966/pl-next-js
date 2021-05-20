@@ -10,8 +10,8 @@ export default function ButtonLike() {
         <style jsx>
           {`
             .like__btn{
-              width: 6.25rem;
-              height: 6.25rem;
+              width: 7.3125rem;
+              height: 7.3125rem;
               border-radius: 0.3125rem;
               background: var(--color-main);
               border: none;
@@ -32,9 +32,10 @@ export default function ButtonLike() {
               font-size: 20px;
             }
             .like__text{
+              font-size: 16px;
+              line-height: 150%;
+              letter-spacing: 0.06em;
               color: rgba(255, 255, 255, 0.8);
-              font-family: var(--font-regular);
-              font-size: 12px;
             }
           `}
         </style>
