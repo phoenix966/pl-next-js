@@ -76,6 +76,11 @@ export default function Slider() {
            width: 65vw;
            border: 1px solid #000;
          }
+         @media screen and (min-width: 728px){
+           .slide{
+             width: ;
+           }
+         }
          .slide__wrap{
            padding-top: 64px;
            width: 42vw;

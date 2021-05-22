@@ -34,21 +34,12 @@ export default function NewsPost({title,imgSrc,view,date,margin}) {
                 flex-direction: column;
                 justify-content: space-between;
                 align-items: center;
-                min-width: 350px;
-                min-height: 415px;
                 border-radius: 1.5625rem;
                 background: #FFFFFF;
                 box-shadow: 0px 0px 1.875rem rgba(0, 0, 0, 0.1);
                 overflow: hidden;
                 margin-bottom: ${margin}px;
                 margin: 10px;
-              }
-              
-              @media screen and (min-width: 1140px){
-                .news-post{
-                  width: 498px;
-                  height: 565px;
-                }
               }
               .news-post__picture{
                 position: relative;
@@ -86,7 +77,7 @@ export default function NewsPost({title,imgSrc,view,date,margin}) {
                 font-size: 1.375rem;
               }
               .news-post__title{
-                width: 28.125rem;
+                width: 80%;
                 font-family: var(--font-bold);
                 font-size: 1.375rem;
                 letter-spacing: 1.5px;

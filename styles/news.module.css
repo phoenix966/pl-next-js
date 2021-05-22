@@ -25,10 +25,14 @@
   display: flex;
   justify-content: center;
 }
-
+@media screen and (min-width: 928px){
+  .news__columns{
+    flex-wrap: nowrap;
+  }
+}
 @media screen and (min-width: 1036px){
   .news__columns{
-    justify-content: space-between;
+    /* justify-content: space-between; */
     padding: 0;
   }
 }

@@ -37,22 +37,24 @@ export default function InnerNews() {
               mediaSize="32"
             />
           </div>
-          <NewsPost
-            title='Состоялось открытие нового It направления'
-            imgSrc='/news-back.jpg'
-            view='0'
-            date='14/04/2021'
-            margin="20"
-            // key={post.date}
-          />
-          <NewsPost
-            title='Состоялось открытие нового It направления'
-            imgSrc='/news-back.jpg'
-            view='0'
-            date='14/04/2021'
-            margin="20"
-            // key={post.date}
-          />
+          <div className={css.innerNews__block}>
+            <NewsPost
+              title='Состоялось открытие нового It направления'
+              imgSrc='/news-back.jpg'
+              view='0'
+              date='14/04/2021'
+              margin="20"
+              // key={post.date}
+            />
+            <NewsPost
+              title='Состоялось открытие нового It направления'
+              imgSrc='/news-back.jpg'
+              view='0'
+              date='14/04/2021'
+              margin="20"
+              // key={post.date}
+            />
+          </div>
         </div>
       </div>
     </div>

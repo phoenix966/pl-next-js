@@ -3,7 +3,7 @@ import Link from 'next/link';
 import Crumb from "./Crumb";
 import NavChevron from './NavChevron';
 
-export default function BreadCrumbs({marginBottom,paddingTop}) {
+export default function BreadCrumbs({marginBottom,paddingTop,firstText,secondText}) {
   return (
     <div className="nav__container">
       <ul className="nav list--reset">
@@ -16,11 +16,11 @@ export default function BreadCrumbs({marginBottom,paddingTop}) {
         </li>
         <NavChevron />
         <li className="nav__element">
-          <Crumb text="Новости" />
+          <Crumb text={firstText}/>
         </li>
         <NavChevron />
         <li className="nav__element">
-          <Crumb text="Внутренняя новость" />
+          <Crumb text={secondText} />
         </li>
 
       </ul>

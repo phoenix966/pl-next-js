@@ -1,5 +1,5 @@
 
-export default function UnderlineTitle({text,color,fontSize,underWidthProcent,underHeightPx,mediaSize}) {
+export default function UnderlineTitle({text,color,fontSize,underWidthProcent,underHeightPx,mediaSize,position}) {
 
   return (
     <>
@@ -17,7 +17,7 @@ export default function UnderlineTitle({text,color,fontSize,underWidthProcent,un
             content: '';
             position: absolute;
             top: ${parseInt(fontSize) + 25}px;
-            left: 0;
+            left: ${position}%;
             background: var(--color-main);
             width: ${underWidthProcent}%;
             height: ${underHeightPx}px;
