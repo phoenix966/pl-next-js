@@ -41,7 +41,7 @@ export default function NavMenu({show}) {
           </Link>
         </li>
         <li className="nav__row">
-          <Link href="#fg">
+          <Link href="/vacancy">
             <a  className="nav__link">Вакансии</a>
           </Link>
         </li>

@@ -13,6 +13,7 @@ export default function Comments() {
             fontSize="42"
             underWidthProcent="60"
             underHeightPx="5"
+            position="0"
           />
           <Button 
             text="Все отзывы"

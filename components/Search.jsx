@@ -22,6 +22,8 @@ export default function Search() {
           display: flex;
           align-items: center;
           justify-content: center;
+          background: var(--color-backgr);
+          border-radius: 0.5rem;
         }
         .search__wrapper{
           display: none;

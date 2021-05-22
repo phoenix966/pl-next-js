@@ -35,6 +35,7 @@ export default function InnerNews() {
               underWidthProcent="20"
               underHeightPx="5"
               mediaSize="32"
+              position="0"
             />
           </div>
           <div className={css.innerNews__block}>

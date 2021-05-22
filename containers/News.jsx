@@ -21,6 +21,7 @@ export default function News() {
               underWidthProcent="38"
               underHeightPx="8"
               mediaSize="48"
+              position="0"
             />
           </div>
           <ul className={style.news__columns}>

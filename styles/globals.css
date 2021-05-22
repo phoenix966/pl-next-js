@@ -386,6 +386,34 @@ template {
 }
 
 @font-face {
+  font-family: 'Roboto-regular';
+  src: url('../assets/fonts/roboto/Roboto-Regular.woff2') format('woff2'),
+      url('../assets/fonts/roboto/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto-bold';
+  src: url('../assets/fonts/roboto/Roboto-Bold.woff2') format('woff2'),
+      url('../assets/fonts/roboto/Roboto-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto-medium';
+  src: url('../assets/fonts/roboto/Roboto-Medium.woff2') format('woff2'),
+      url('../assets/fonts/roboto/Roboto-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
   font-family: 'icomoon';
   src:  url('../assets/fonts/icomoon/icomoon.eot?amhojn');
   src:  url('../assets/fonts/icomoon/icomoon.eot?amhojn#iefix') format('embedded-opentype'),
@@ -479,6 +507,10 @@ html {
   --font-medium: "Rubik-medium",sans-serif;
   --font-bold: "Rubik-bold",sans-serif;
   --font-crumbs: 'Inter',sans-serif;
+
+  --font-vacancy-regular: 'Roboto-regular',sans-serif;
+  --font-vacancy-medium: 'Roboto-medium',sans-serif;
+  --font-vacancy-bold: 'Roboto-bold',sans-serif;
 }
 
 html, body {

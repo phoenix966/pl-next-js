@@ -24,6 +24,7 @@ export default function PostSection() {
             underWidthProcent="80"
             underHeightPx="5"
             mediaSize="42"
+            position="0"
           />
           <Button 
             text="Все курсы"

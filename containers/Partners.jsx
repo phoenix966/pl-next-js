@@ -14,6 +14,7 @@ export default function Partners() {
               underWidthProcent="90"
               underHeightPx="5"
               mediaSize="40"
+              position="0"
             />
         </div>
         <div className={style.info__wrapper}>
