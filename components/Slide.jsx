@@ -72,6 +72,7 @@ export default function Slide({ img }) {
             height: 26vh;
             width: 34vw;
             border: 1px solid red;
+            margin-bottom: 20px;
           }
           
         `}

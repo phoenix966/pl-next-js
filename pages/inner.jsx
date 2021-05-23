@@ -11,11 +11,6 @@ export default function Inner() {
         <BreadCrumbs paddingTop="43" marginBottom="5" firstText="Новости" secondText="Внутренняя новость"/>
         <InnerNews/>
       </Layout>
-      <style jsx>
-        {`
-          
-        `}
-      </style>
     </div>
   )
 }

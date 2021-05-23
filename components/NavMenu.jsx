@@ -51,8 +51,8 @@ export default function NavMenu({show}) {
           </Link>
         </li>
         <li className="nav__row">
-          <Link href="#fg">
-            <a  className="nav__link">Партнерам</a>
+          <Link href="/contacts">
+            <a  className="nav__link">Контакты</a>
           </Link>
         </li>
         <li className="nav__row">

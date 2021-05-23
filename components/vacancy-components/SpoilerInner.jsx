@@ -8,6 +8,7 @@ export default function SpoilerInner({actived,title,par,list}) {
   useEffect(()=>{
     actived ? setIsOpen(true) : setIsOpen(false);
   },[actived])
+  
   return (
     <div className='inner'>
       <h3 className="inner__title">{title} <span className="inner__icon"><FaChevronDown/></span></h3>

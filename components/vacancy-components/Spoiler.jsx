@@ -1,5 +1,5 @@
 import { FaChevronUp, FaChevronDown } from 'react-icons/fa';
-import {useState} from 'react';
+import {Children, useState} from 'react';
 import SpoilerInner from '../vacancy-components/SpoilerInner';
 
 export default function Spoiler({text,title,par,list}) {
@@ -46,7 +46,7 @@ export default function Spoiler({text,title,par,list}) {
             cursor: pointer;
           }
           .spoiler__inner{
-            max-width: 790px;
+            max-width: 790px;  
           }
         `}
       </style>

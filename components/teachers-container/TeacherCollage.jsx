@@ -19,6 +19,7 @@ export default function TeacherCollage() {
           .collage__container{
             max-width: 1600px;
             margin: 0 auto;
+            margin-bottom: 100px;
           }
           .collage__wrapper{
             width: 100%;
