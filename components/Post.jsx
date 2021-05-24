@@ -1,13 +1,15 @@
 import RatingStar from '../components/RatingStar'
 
-export default function Post({imgSrc,title,user,clock,rating}) {
+export default function Post({ imgSrc, title, user, clock, rating }) {
   return (
     <li className='post'>
       <div className="post__picture">
-        <img src={imgSrc} alt="img" className="post__img"/>
+        <img src={imgSrc} alt="img" className="post__img" />
       </div>
       <h2 className="post__title">{title}</h2>
-      <RatingStar rate={rating}/>
+      <div className="rating__wrap">
+        <RatingStar rate={rating} />
+      </div>
       <div className="post__wrap">
         <span className="icon-user post__icon">
           <span>{user}</span>
@@ -19,7 +21,7 @@ export default function Post({imgSrc,title,user,clock,rating}) {
       <style jsx>
         {`
           .post{
-            width: 21.875rem;
+            width: 100%;
             height: 34.6875rem;
             display: flex;
             flex-direction: column;
@@ -31,8 +33,11 @@ export default function Post({imgSrc,title,user,clock,rating}) {
             background: #fff;
             box-shadow: 0px 0px 1.875rem rgba(0, 0, 0, 0.1);
           }
+          .rating__wrap{
+            padding: 0.3125rem 0.3125rem;
+          }
           .post__picture{
-            height: 50%;
+            height: 60%;
             width: 100%;
           }
           .post__img{
@@ -43,7 +48,7 @@ export default function Post({imgSrc,title,user,clock,rating}) {
             object-fit: cover;
           }
           .post__title{
-            padding: 0 2.1875rem;
+            padding: 0.3125rem 0.3125rem;
             font-family: var(--font-bold);
             font-size: 1.5rem;
             line-height: 1.25rem;
@@ -67,14 +72,30 @@ export default function Post({imgSrc,title,user,clock,rating}) {
           }
           @media screen and (min-width: 728px){
             .post{
-              width: 31.25rem;
+              width: 40%;
               height: 40.9375rem;
             }
             .post__title{
               line-height: 2.5rem;
+              padding: 0 2.1875rem;
             }
             .post__picture{
               height: 61%;
+            }
+            .rating__wrap{
+              padding: 0 2.1875rem;
+          }
+          .post__picture{
+            height: 50%;
+          }
+          }
+          @media screen and (min-width: 1640px){
+            .post{
+              width: 31%;
+              height: 40.9375rem;
+            }
+            .post__picture{
+              height: 60%;
             }
           }
         `}

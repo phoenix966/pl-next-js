@@ -15,8 +15,7 @@ export default function RatingStar({rate}) {
         {`
           .rating{
             display: flex;
-            justify-content: space-between; 
-            padding: 0 2.1875rem;
+            justify-content: space-between;
           }
           .rating__stars{
             position: relative;
