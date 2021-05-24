@@ -78,17 +78,17 @@ export default function Slider() {
            justify-content: center;
            align-items: center;
            background: var(--color-back);
-           padding-top: 50px;
+           padding-top: 3.125rem;
            height: 70vh;
            width: 100%;
            border: 1px solid #000;
          }
          .slide__wrap{
            position: relative;
-           padding-top: 64px;
+           padding-top: 4rem;
            width: 99%;
            height: 43vh;
-           padding-bottom: 50px;
+           padding-bottom: 3.125rem;
            margin: 0 auto;
            text-align: center;
            background: var(--color-back);
@@ -98,17 +98,17 @@ export default function Slider() {
            display: flex;
            justify-content: center;
            align-items: center;
-           padding-bottom: 100px;
+           padding-bottom: 6.25rem;
          }
          .slide__btn{
-           margin: 0 22px;
+           margin: 0 1.375rem;
            display: flex;
            justify-content: center;
            align-items: center;
-           border: 2px solid var(--color-main);
+           border: 0.125rem solid var(--color-main);
            color: var(--color-main);
-           border-radius: 5px;
-           padding: 10px 18px;
+           border-radius: 0.3125rem;
+           padding: 0.625rem 1.125rem;
          }
          .slide__btn:hover{
             background: var(--color-main);
@@ -119,22 +119,22 @@ export default function Slider() {
            display: flex;
            color: var(--color-second);
            font-family: var(--font-regular);
-           font-size: 14px;
+           font-size: 0.875rem;
          }
          .slide__number--small{
-            font-size: 10px;
-            padding-top: 5px;
+            font-size: 0.625rem;
+            padding-top: 0.3125rem;
          }
          .slide__arrow--left{
            position: absolute;
-           top: 33px;
-           left: 33px;
+           top: 2.0625rem;
+           left: 2.0625rem;
            z-index: -2;
          }
          .slide__arrow--right{
            position: absolute;
-           bottom: 20px;
-           right: 30px;
+           bottom: 1.25rem;
+           right: 1.875rem;
            z-index: -2;
            transform: rotateZ(180deg);
          }

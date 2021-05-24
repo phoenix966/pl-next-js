@@ -77,12 +77,19 @@ export default function NewsPost({title,imgSrc,view,date,margin}) {
                 font-size: 1.375rem;
               }
               .news-post__title{
-                width: 80%;
+                width: 90%;
                 font-family: var(--font-bold);
                 font-size: 1.375rem;
                 letter-spacing: 1.5px;
                 padding: 0 0.9375rem;
+                padding-top: 18px;
                 color: var(--color-second);
+              }
+              @media screen and (min-width: 1140px){
+                .news-post__picture{
+                  width: 100%;
+                  height: 66%;
+                }
               }
             `}
           </style>

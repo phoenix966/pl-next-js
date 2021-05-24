@@ -28,6 +28,7 @@
   max-width: 59.6875rem;
   min-height: 8.75rem;
   line-height: 2.1875rem;
+  margin-bottom: 1.25rem;
 }
 @media screen and (min-width: 728px){
   .main__title{

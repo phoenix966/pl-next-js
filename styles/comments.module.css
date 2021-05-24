@@ -1,13 +1,22 @@
 .comments{
   padding-top: 9.3125rem;
   background: var(--color-back);
+  margin-bottom: 4.25rem;
 }
 .comments__container{
   max-width: 1640px;
-  padding: 0 20px;
+  padding: 0 1.25rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+.comments__buttons{
+  margin: 1.875rem 0;
+}
+@media screen and (min-width: 728px){
+  .comments__buttons{
+    margin: 0;
+  }
 }

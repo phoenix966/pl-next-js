@@ -10,20 +10,23 @@ export default function Comments() {
           <UnderlineTitle
             text="Отзывы"
             color="var(--color-second)"
-            fontSize="42"
+            fontSize="36"
             underWidthProcent="72"
             underHeightPx="5"
             position="0"
+            mediaSize="42"
           />
-          <Button 
-            text="Все отзывы"
-            fontSize="16"
-            color="var(--color-main)"
-            paddingVertical="15"
-            paddingHorizont="35"
-            borderColor="var(--color-main)"
-            borderRadius="12"
-          />
+          <div className={style.comments__buttons}>
+            <Button 
+              text="Все отзывы"
+              fontSize="16"
+              color="var(--color-main)"
+              paddingVertical="15"
+              paddingHorizont="35"
+              borderColor="var(--color-main)"
+              borderRadius="12"
+            />
+          </div>
         </div>
        <Slider/>
     </section>

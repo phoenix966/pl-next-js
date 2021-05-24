@@ -17,7 +17,7 @@ export default function News() {
             <UnderlineTitle
               text="Новостной блог"
               color="#000"
-              fontSize="38"
+              fontSize="36"
               underWidthProcent="38"
               underHeightPx="8"
               mediaSize="48"

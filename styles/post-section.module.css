@@ -4,7 +4,7 @@
 .postSection__container{
   max-width: 1640px;
   margin: 0 auto;
-  padding: 0 1.25rem;
+  padding: 0 0.3125rem;
 }
 .PostSection__wrapper{
   display: flex;
@@ -34,6 +34,9 @@
   }
   .postSection__btn{
     margin: 0; 
+  }
+  .postSection__container{
+    padding: 0 1.25rem;
   }
 }
 @media screen and (min-width: 1140px){

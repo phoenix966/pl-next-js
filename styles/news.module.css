@@ -3,14 +3,14 @@
   margin-bottom: 6.25rem;
 }
 .news__container{
-  max-width: 1600px;
+  max-width: 1640px;
   margin: 0 auto;
 }
 .news__wrapper{
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-bottom: 4.0625rem;
+  margin-bottom: 55px;
 }
 .news__columns{
   list-style-type: none;
@@ -28,6 +28,9 @@
 @media screen and (min-width: 928px){
   .news__columns{
     flex-wrap: nowrap;
+  }
+  .news__container{
+    padding: 0 20px;
   }
 }
 @media screen and (min-width: 1036px){

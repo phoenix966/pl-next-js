@@ -540,11 +540,6 @@ html{
   overflow: hidden;
 }
 
-/* .container{
-  max-width:1140px;
-  margin: 0 auto;
-} */
-
 .body{
   min-width:375px;
 }
@@ -559,8 +554,3 @@ h1,h2,h3,h4,h5,p{
   padding: 0;
   margin: 0;
 }
-/* 
-html{
-  min-width:1920px;
-  background:red url('../assets/maket.png') left top no-repeat;
-} */

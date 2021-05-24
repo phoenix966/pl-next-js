@@ -23,14 +23,14 @@ export default function Slide({ img }) {
         {`
           .slide__picture{
             margin: 0 auto;
-            width: 150px;
-            height: 150px;
+            width: 9.375rem;
+            height: 9.375rem;
             border-radius: 50%;
             border: 1px solid #000;
             transform: translateY(-64px);
             border: 5px solid #FFFFFF;
             box-sizing: border-box;
-            filter: drop-shadow(0px 4.53741px 18.1496px #F2F5FA), drop-shadow(0px 4.53741px 18.1496px #F2F5FA), drop-shadow(0px 4.53741px 18.1496px #F2F5FA);
+            filter: drop-shadow(0px 0.2836rem 1.1343rem #F2F5FA), drop-shadow(0px 0.2836rem 1.1343rem #F2F5FA), drop-shadow(0px 0.2836rem 1.1343rem #F2F5FA);
           }
           .slide__img{
             width: 100%;
@@ -40,52 +40,52 @@ export default function Slide({ img }) {
           }
           .slide__box{
             position: relative;
-            padding: 0 20px 20px 20px;
+            padding: 0 1.25rem 1.25rem 1.25rem;
             width: 85%;
             height: 41vh;
             margin: 0 auto;
-            margin-bottom: 45px;
+            margin-bottom: 2.8125rem;
             background: #FFFFFF;
-            box-shadow: 0px 4.53741px 18.1496px #F2F5FA, 0px 4.53741px 18.1496px #F2F5FA, 0px 4.53741px 18.1496px #F2F5FA;
-            border-radius: 25px;
+            box-shadow: 0px 0.2836rem 1.1343rem #F2F5FA, 0px 0.2836rem 1.1343rem #F2F5FA, 0px 0.2836rem 1.1343rem #F2F5FA;
+            border-radius: 1.5625rem;
             border: 1px solid blue;
           }
           .slide__title{
             font-family: var(--font-medium);
             color: var(--color-second);
-            font-size: 18px;
-            line-height: 21.33px;
-            margin-bottom: 15px;
+            font-size: 1.125rem;
+            line-height: 1.3331rem;
+            margin-bottom: 0.9375rem;
           }
           .slide__text{
             font-family: var(--font-light);
             color: #858688;
-            font-size: 14px;
+            font-size: 0.875rem;
             height: 20vh;
-            line-height: 23.8px;
-            letter-spacing: 2px;
+            line-height: 1.4875rem;
+            letter-spacing: 0.125rem;
             margin: 0 auto;
             overflow-x: scroll;
           }
           .slide__wrapper span{
             color: var(--color-main);
-            margin: 0 4px;
+            margin: 0 0.25rem;
           }
           .slide__wrap{
             margin: 0 auto;
             height: 26vh;
             width: 100%;
             border: 1px solid red;
-            margin-bottom: 40px;
+            margin-bottom: 2.5rem;
           }
           .slide__icon{
             position: absolute;
-            bottom: -9px;
+            bottom: -0.5625rem;
             right: 0;
             left: 0;
             margin: 0 auto;
             color: var(--color-main);
-            font-size:  32px;
+            font-size:  2rem;
             z-index: 3;
           }
           @media screen and (min-width: 1140px){
