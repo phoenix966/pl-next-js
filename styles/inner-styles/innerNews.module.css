@@ -1,12 +1,13 @@
 .innerNews__container{
   display: flex;
   justify-content: space-between;
-  max-width: 1600px;
+  max-width: 1640px;
   margin: 0 auto;
   flex-wrap: wrap;
 }
 .innerNews__wrapper{
   padding-top: 2.1875rem;
+  padding: 0 10px;
   width: 100%;
 }
 .innerNews__text{
@@ -23,12 +24,19 @@
 .innerNews__box{
   display: flex;
   flex-direction: column;
+  padding-left: 40px;
 }
 .innerNews__underline{
   margin-bottom: 1.25rem;
 }
-@media screen and (min-width: 1366px){
+
+@media screen and (min-width: 1606px){
   .innerNews__wrapper{
     width: 58%;
+    padding: 0;
+    padding-top: 2.1875rem;
+  }
+  .innerNews__container{
+    padding: 0 20px;
   }
 }

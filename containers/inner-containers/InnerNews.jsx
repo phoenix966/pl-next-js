@@ -41,7 +41,7 @@ export default function InnerNews() {
           <div className={css.innerNews__block}>
             <NewsPost
               title='Состоялось открытие нового It направления'
-              imgSrc='/news-back.jpg'
+              imgSrc='post/post.jpg'
               view='0'
               date='14/04/2021'
               margin="20"
@@ -49,7 +49,7 @@ export default function InnerNews() {
             />
             <NewsPost
               title='Состоялось открытие нового It направления'
-              imgSrc='/news-back.jpg'
+              imgSrc='post/post.jpg'
               view='0'
               date='14/04/2021'
               margin="20"

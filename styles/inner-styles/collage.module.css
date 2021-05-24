@@ -1,7 +1,7 @@
 .collage{
  margin-bottom: 50px;
  padding: 15px;
- max-width: 958px;
+ max-width: 100%;
 }
 .collage__banner{
   margin-bottom: 30px;
@@ -66,7 +66,8 @@
   .collage__wrapper{
     display: grid;
     width: 100%;
-    grid-template-columns: repeat(7, minmax(75px,117px));
+    justify-items: center;
+    grid-template-columns: repeat(7, minmax(75px,1fr));
     grid-template-rows: 117px;
     grid-column-gap: 18px;
   }

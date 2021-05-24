@@ -39,7 +39,7 @@ export default function NewsPost({title,imgSrc,view,date,margin}) {
                 box-shadow: 0px 0px 1.875rem rgba(0, 0, 0, 0.1);
                 overflow: hidden;
                 margin-bottom: ${margin}px;
-                margin: 10px;
+                margin: 0.625rem;
               }
               .news-post__picture{
                 position: relative;
@@ -80,9 +80,9 @@ export default function NewsPost({title,imgSrc,view,date,margin}) {
                 width: 90%;
                 font-family: var(--font-bold);
                 font-size: 1.375rem;
-                letter-spacing: 1.5px;
+                letter-spacing: 0.0938rem;
                 padding: 0 0.9375rem;
-                padding-top: 18px;
+                padding-top: 1.125rem;
                 color: var(--color-second);
               }
               @media screen and (min-width: 1140px){

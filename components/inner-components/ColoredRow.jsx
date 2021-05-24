@@ -10,7 +10,7 @@ export default function ColoredRow({text,dot}) {
             width: 100%;
             height: 61px;
             border-left: 5px solid var(--color-main);
-            margin: 10px 10px;
+            margin: 10px 0;
           }
           .row__text{
             display: flex;

@@ -1,5 +1,4 @@
 import Link from 'next/link';
-
 import Crumb from "./Crumb";
 import NavChevron from './NavChevron';
 
@@ -29,32 +28,42 @@ export default function BreadCrumbs({marginBottom,paddingTop,firstText,secondTex
             .nav{
               display: flex;
               align-items: center;
-              height: 31px;
+              height: 1.9375rem;
             }
             .nav__container{
-              max-width:  1600px;
+              max-width:  1640px;
               padding-top: ${paddingTop}px;
               margin: 0 auto;
               margin-bottom: ${marginBottom}px;
+              visibility: hidden;
             }
             .nav__main{
               display: flex;
               justify-content: center;
               align-items: center;
-              width: 31px;
-              height: 31px;
+              width: 1.9375rem;
+              height: 1.9375rem;
               background: #E3E4EB;
-              border-radius: 4px;
+              border-radius: 0.25rem;
             }
             .nav__picture{
-              width: 14px;
-              height: 14px;
+              width: 0.875rem;
+              height: 0.875rem;
             }
             .nav__img{
               object-position: center;
               object-fit: cover;
               width: 100%;
               height: 100%;
+            }
+            @media screen and (min-width: 728px){
+              .nav__container{
+                max-width:  1640px;
+                padding-top: ${paddingTop}px;
+                margin: 0 auto;
+                margin-bottom: ${marginBottom}px;
+                visibility: visible;
+              }
             }
           `}
       </style>
