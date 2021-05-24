@@ -38,7 +38,7 @@ export default function Slide({ img }) {
             position: relative;
             padding: 0 20px 20px 20px;
             width: 40vw;
-            height: 40vh;
+            height: 41vh;
             margin: 0 auto;
             margin-bottom: 45px;
             background: #FFFFFF;
@@ -72,7 +72,7 @@ export default function Slide({ img }) {
             height: 26vh;
             width: 34vw;
             border: 1px solid red;
-            margin-bottom: 20px;
+            margin-bottom: 40px;
           }
           
         `}

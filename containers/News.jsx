@@ -6,9 +6,9 @@ import {useState} from 'react'
 
 export default function News() {
   const [news,setNews] = useState([
-    {title:'Состоялось открытие нового It направления',imgSrc:'/news-back.jpg',view:'2454',date:'14/05/2021'},
-    {title:'Состоялось открытие нового It направления-1',imgSrc:'/news-back.jpg',view:'2454',date:'16/04/2021'},
-    {title:'Состоялось открытие нового It направления-2',imgSrc:'/news-back.jpg',view:'2454',date:'19/04/2021'}
+    {title:'Состоялось открытие нового It направления',imgSrc:'post/post.jpg',view:'2454',date:'14/05/2021'},
+    {title:'Состоялось открытие нового It направления-1',imgSrc:'post/post.jpg',view:'2454',date:'16/04/2021'},
+    {title:'Состоялось открытие нового It направления-2',imgSrc:'post/post.jpg',view:'2454',date:'19/04/2021'}
   ])
   return (
     <div className={style.news}> 

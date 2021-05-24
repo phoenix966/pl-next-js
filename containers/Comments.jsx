@@ -11,7 +11,7 @@ export default function Comments() {
             text="Отзывы"
             color="var(--color-second)"
             fontSize="42"
-            underWidthProcent="60"
+            underWidthProcent="72"
             underHeightPx="5"
             position="0"
           />

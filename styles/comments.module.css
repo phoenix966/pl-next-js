@@ -1,14 +1,13 @@
 .comments{
   padding-top: 9.3125rem;
-  /* height: 1000px; */
   background: var(--color-back);
 }
 .comments__container{
-  max-width: 1600px;
+  max-width: 1640px;
+  padding: 0 20px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  /* margin-bottom: 100px; */
 }
