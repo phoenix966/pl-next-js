@@ -1,6 +1,6 @@
 import Svg from '../../assets/images/Logo.svg'
 
-export default function Logo({flex}) {
+export default function Logo({flex,padding}) {
   return (
     <div className='logo'>
       <div className="logo__wrapper">
@@ -18,6 +18,7 @@ export default function Logo({flex}) {
           .logo{
             display: flex;
             flex: 1 1 ${flex};
+            padding-left: ${padding}rem;
           }
           .logo__wrapper{
             margin-right: 1.0625rem;
