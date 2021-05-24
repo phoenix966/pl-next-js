@@ -39,22 +39,24 @@ export default function InnerNews() {
             />
           </div>
           <div className={css.innerNews__block}>
-            <NewsPost
-              title='Состоялось открытие нового It направления'
-              imgSrc='post/post.jpg'
-              view='0'
-              date='14/04/2021'
-              margin="20"
-              // key={post.date}
-            />
-            <NewsPost
-              title='Состоялось открытие нового It направления'
-              imgSrc='post/post.jpg'
-              view='0'
-              date='14/04/2021'
-              margin="20"
-              // key={post.date}
-            />
+            <div className={css.innerNews__columns}>
+              <NewsPost
+                title='Состоялось открытие нового It направления'
+                imgSrc='post/post.jpg'
+                view='0'
+                date='14/04/2021'
+                margin="20"
+                // key={post.date}
+              />
+              <NewsPost
+                title='Состоялось открытие нового It направления'
+                imgSrc='post/post.jpg'
+                view='0'
+                date='14/04/2021'
+                margin="20"
+                // key={post.date}
+              />
+            </div>
           </div>
         </div>
       </div>

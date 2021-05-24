@@ -40,6 +40,7 @@ export default function NewsPost({title,imgSrc,view,date,margin}) {
                 overflow: hidden;
                 margin-bottom: ${margin}px;
                 margin: 0.625rem;
+                
               }
               .news-post__picture{
                 position: relative;
@@ -85,10 +86,18 @@ export default function NewsPost({title,imgSrc,view,date,margin}) {
                 padding-top: 1.125rem;
                 color: var(--color-second);
               }
-              @media screen and (min-width: 1140px){
+              @media screen and (min-width: 1064px){
                 .news-post__picture{
                   width: 100%;
                   height: 66%;
+                }
+                .news-post{
+                  flex: 1 1 40%;
+                }
+              }
+              @media screen and (min-width: 1600px){
+                .news-post{
+                  flex: 1 1 30%;
                 }
               }
             `}

@@ -1,14 +1,14 @@
 .collage{
- margin-bottom: 50px;
- padding: 15px;
+ margin-bottom: 3.125rem;
+ padding: 0.9375rem;
  max-width: 100%;
 }
 .collage__banner{
-  margin-bottom: 30px;
+  margin-bottom: 1.875rem;
   margin: 0 auto;
   width: 90%;
-  min-height: 420px;
-  background: url("../../assets/images/collage/col-1.png") center / cover, #C4C4C4;
+  min-height: 26.25rem;
+  background: url("../../assets/images/collage/col-1.png") top center / cover, #C4C4C4;
 }
 .collage__wrapper{
   margin: 0 auto;
@@ -21,95 +21,95 @@
 
 
 .collage__picture:nth-child(1){
-  background: url("../../assets/images/collage/col-1.png") center / cover, #C4C4C4;
+  background: url("../../assets/images/collage/col-1.png") top center / cover, #C4C4C4;
   width: 90%;
-  height: 420px;
-  margin: 15px auto;
+  height: 26.25rem;
+  margin: 0.9375rem auto;
 }
 .collage__picture:nth-child(2){
-  background: url("../../assets/images/collage/col-1.png") center / cover, #C4C4C4;
+  background: url("../../assets/images/collage/col-1.png") top center / cover, #C4C4C4;
   width: 90%;
-  height: 420px;
-  margin: 15px auto;
+  height: 26.25rem;
+  margin: 0.9375rem auto;
 }
 .collage__picture:nth-child(3){
-  background: url("../../assets/images/collage/col-1.png") center / cover, #C4C4C4;
+  background: url("../../assets/images/collage/col-1.png") top center / cover, #C4C4C4;
   width: 90%;
-  height: 420px;
-  margin: 15px auto;
+  height: 26.25rem;
+  margin: 0.9375rem auto;
 }
 .collage__picture:nth-child(4){
-  background: url("../../assets/images/collage/col-1.png") center / cover, #C4C4C4;
+  background: url("../../assets/images/collage/col-1.png") top center / cover, #C4C4C4;
   width: 90%;
-  height: 420px;
-  margin: 15px auto;
+  height: 26.25rem;
+  margin: 0.9375rem auto;
 }
 .collage__picture:nth-child(5){
-  background: url("../../assets/images/collage/col-1.png") center / cover, #C4C4C4;
+  background: url("../../assets/images/collage/col-1.png") top center / cover, #C4C4C4;
   width: 90%;
-  height: 420px;
-  margin: 15px auto;
+  height: 26.25rem;
+  margin: 0.9375rem auto;
 }
 .collage__picture:nth-child(6){
-  background: url("../../assets/images/collage/col-1.png") center / cover, #C4C4C4;
+  background: url("../../assets/images/collage/col-1.png") top center / cover, #C4C4C4;
   width: 90%;
-  height: 420px;
-  margin: 15px auto;
+  height: 26.25rem;
+  margin: 0.9375rem auto;
 }
 .collage__picture:nth-child(7){
-  background: url("../../assets/images/collage/col-1.png") center / cover, #C4C4C4;
+  background: url("../../assets/images/collage/col-1.png") top center / cover, #C4C4C4;
   width: 90%;
-  height: 420px;
-  margin: 15px auto;
+  height: 26.25rem;
+  margin: 0.9375rem auto;
 }
 @media screen and (min-width: 1366px){
   .collage__wrapper{
     display: grid;
     width: 100%;
     justify-items: center;
-    grid-template-columns: repeat(7, minmax(75px,1fr));
-    grid-template-rows: 117px;
-    grid-column-gap: 18px;
+    grid-template-columns: repeat(7, minmax(4.6875rem,1fr));
+    grid-template-rows: 7.3125rem;
+    grid-column-gap: 1.125rem;
   }
   .collage__picture:nth-child(1){
-    max-width: 117px;
+    max-width: 7.3125rem;
     height: 100%;
     margin: 0;
   }
   .collage__picture:nth-child(2){
-    max-width: 117px;
+    max-width: 7.3125rem;
     height: 100%;
     margin: 0;
   }
   .collage__picture:nth-child(3){
-    max-width: 117px;
+    max-width: 7.3125rem;
     height: 100%;
     margin: 0;
   }
   .collage__picture:nth-child(4){
-    max-width: 117px;
+    max-width: 7.3125rem;
     height: 100%;
     margin: 0;
   }
   .collage__picture:nth-child(5){
-    max-width: 117px;
+    max-width: 7.3125rem;
     height: 100%;
     margin: 0;
   }
   .collage__picture:nth-child(6){
-    max-width: 117px;
+    max-width: 7.3125rem;
     height: 100%;
     margin: 0;
   }
   .collage__picture:nth-child(7){
-    max-width: 117px;
+    max-width: 7.3125rem;
     height: 100%;
     margin: 0;
   }
   .collage__banner{
     width: 100%;
-    height: 530px;
+    height: 33.125rem;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 1.875rem;
   }
 }
