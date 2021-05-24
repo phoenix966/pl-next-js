@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper-bundle.css';
 import Slide from './Slide';
 import Arrow from '../components/Arrow';
-import { FaArrowLeft, FaArrowRight, FaArrowCircleDown } from 'react-icons/fa';
+import { FaArrowLeft, FaArrowRight } from 'react-icons/fa';
 
 export default function Slider() {
   const sliderRef = useRef();
@@ -16,12 +16,6 @@ export default function Slider() {
   return (
     <>
       <div className='slide'>
-        <div className='slide__arrow--left'>
-          <Arrow />
-        </div>
-        <div className='slide__arrow--right'>
-          <Arrow />
-        </div>
         <Swiper
           ref={sliderRef}
           spaceBetween={50}
@@ -32,24 +26,39 @@ export default function Slider() {
         >
           <SwiperSlide>
             <div className="slide__wrap">
+              <div className='slide__arrow--left'>
+                <Arrow />
+              </div>
+              <div className='slide__arrow--right'>
+                <Arrow />
+              </div>
               <Slide img="/default.png" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="slide__wrap">
+              <div className='slide__arrow--left'>
+                <Arrow />
+              </div>
+              <div className='slide__arrow--right'>
+                <Arrow />
+              </div>
               <Slide img="/default.png" />
             </div>
           </SwiperSlide>
           <SwiperSlide>
             <div className="slide__wrap">
+              <div className='slide__arrow--left'>
+                <Arrow />
+              </div>
+              <div className='slide__arrow--right'>
+                <Arrow />
+              </div>
               <Slide img="/default.png" />
             </div>
           </SwiperSlide>
 
         </Swiper>
-      </div>
-      <div className="slide__icon">
-        <FaArrowCircleDown />
       </div>
       <div className="slide__row">
         <button className="slide__btn" onClick={slideNextToggle}><FaArrowLeft /></button>
@@ -63,28 +72,23 @@ export default function Slider() {
       <style jsx>
         {`
          .slide{
-           position: relative;
            box-sizing: border-box;
            margin: 0 auto;
            display: flex;
            justify-content: center;
            align-items: center;
            background: var(--color-back);
-           margin-bottom: 20px;
            padding-top: 50px;
            height: 70vh;
-           width: 65vw;
+           width: 100%;
            border: 1px solid #000;
          }
-         @media screen and (min-width: 728px){
-           .slide{
-             width: ;
-           }
-         }
          .slide__wrap{
+           position: relative;
            padding-top: 64px;
-           width: 42vw;
+           width: 99%;
            height: 43vh;
+           padding-bottom: 50px;
            margin: 0 auto;
            text-align: center;
            background: var(--color-back);
@@ -97,14 +101,14 @@ export default function Slider() {
            padding-bottom: 100px;
          }
          .slide__btn{
-           margin: 0 10px;
+           margin: 0 22px;
            display: flex;
            justify-content: center;
            align-items: center;
            border: 2px solid var(--color-main);
            color: var(--color-main);
            border-radius: 5px;
-           padding: 8px 17px;
+           padding: 10px 18px;
          }
          .slide__btn:hover{
             background: var(--color-main);
@@ -123,25 +127,39 @@ export default function Slider() {
          }
          .slide__arrow--left{
            position: absolute;
-           top: 162px;
-           left: 180px;
-           z-index: 2;
+           top: 33px;
+           left: 33px;
+           z-index: -2;
          }
          .slide__arrow--right{
            position: absolute;
-           bottom: 50px;
-           right: 175px;
-           z-index: 2;
+           bottom: 20px;
+           right: 30px;
+           z-index: -2;
            transform: rotateZ(180deg);
          }
-         .slide__icon{
-            display: flex;
-            justify-content: center;
-            color: var(--color-main);
-            font-size:  32px;
-            margin-bottom: 20px;
+         @media screen and (min-width: 1140px){
+          .slide__arrow--left{
+           position: absolute;
+           top: 0;
+           left: 0;
+           z-index: 5;
           }
-         
+          .slide__arrow--right{
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: 5;
+            transform: rotateZ(180deg);
+          }
+          .slide{
+            width: 65vw;
+          }
+          .slide__wrap{
+            width: 49vw;
+          }
+         }
+
         `}
       </style>
     </>

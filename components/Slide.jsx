@@ -1,3 +1,4 @@
+import { FaArrowCircleDown } from 'react-icons/fa';
 
 export default function Slide({ img }) {
   return (
@@ -14,6 +15,9 @@ export default function Slide({ img }) {
         <p className="slide__text">
           Моя цель учится в чешском техническом университете появилась в начале 11 класса, тогда я поступил в профессиональный лицей номер 98 по специализации Фронт Энд разработчик. Учеба там была очень интересная и по моему мнению более полезная чем учеба в школе. Моим учителем был Сомятов А В. Это был один из лучших преподавателей. Сомятов А. В прекрасный учитель. Всегда помогал если что то не получается. Также помогал когда я начал работать в Намбасофт. По окончанию учебы меня пригласили в компанию Намбасофт где я работал и зарабатывал опыт. Сейчас я работаю в этой компании удаленно. Это мне очень помогает поддерживать знания которыми я овладел в этой компании. Всем советую учебу в профессиональном лицее номер 98.
         </p>
+      </div>
+      <div className="slide__icon">
+        <FaArrowCircleDown />
       </div>
       <style jsx>
         {`
@@ -37,7 +41,7 @@ export default function Slide({ img }) {
           .slide__box{
             position: relative;
             padding: 0 20px 20px 20px;
-            width: 40vw;
+            width: 85%;
             height: 41vh;
             margin: 0 auto;
             margin-bottom: 45px;
@@ -70,11 +74,28 @@ export default function Slide({ img }) {
           .slide__wrap{
             margin: 0 auto;
             height: 26vh;
-            width: 34vw;
+            width: 100%;
             border: 1px solid red;
             margin-bottom: 40px;
           }
-          
+          .slide__icon{
+            position: absolute;
+            bottom: -9px;
+            right: 0;
+            left: 0;
+            margin: 0 auto;
+            color: var(--color-main);
+            font-size:  32px;
+            z-index: 3;
+          }
+          @media screen and (min-width: 1140px){
+            .slide__box{
+              width: 40vw;
+            }
+            .slide__wrap{
+              width: 34vw;
+            }
+          }
         `}
       </style>
     </div>
