@@ -1,6 +1,7 @@
 .info__container{
-  max-width: 1600px;
+  max-width: 1640px;
   margin: 25px auto;
+  padding: 0 5px;
 }
 .info__row{
   display: flex;
@@ -8,6 +9,8 @@
   align-items: center;
   margin-bottom: 6.25rem;
 }
-/* .info__wrapper{
-  border: 1px solid red;
-} */
+@media screen and (min-width: 728px){
+  .info__container{
+    padding: 0 20px;
+  }
+}

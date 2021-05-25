@@ -42,7 +42,7 @@ export default function Slide({ img }) {
             position: relative;
             padding: 0 1.25rem 1.25rem 1.25rem;
             width: 85%;
-            height: 41vh;
+            min-height: 41vh;
             margin: 0 auto;
             margin-bottom: 2.8125rem;
             background: #FFFFFF;
@@ -73,7 +73,7 @@ export default function Slide({ img }) {
           }
           .slide__wrap{
             margin: 0 auto;
-            height: 26vh;
+            height: 30vh;
             width: 100%;
             border: 1px solid red;
             margin-bottom: 2.5rem;

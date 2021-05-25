@@ -8,13 +8,13 @@ export default function TeacherLabel({text}) {
       <style jsx>
         {`
           .teacherLabel{
-            font-size: 12px;
-            line-height: 18px;
+            font-size: 0.75rem;
+            line-height: 1.125rem;
             color: #F0F0F0;
             font-family: var(--font-crumbs);
-            padding: 5px 10px;
+            padding: 0.3125rem 0.625rem;
             background: var(--color-crumbs);
-            border-radius: 4px;
+            border-radius: 0.25rem;
           }
         `}
       </style>

@@ -3,7 +3,8 @@
   padding: 50px 0;
 }
 .footer__container{
-  max-width: 1600px;
+  max-width: 1640px;
+  padding: 0 5px;
   margin: 0 auto;
 }
 .footer__columns{
@@ -27,11 +28,17 @@
     align-items: center;
   }
 }
+@media screen and (min-width: 728px){
+  .footer__container{
+    padding: 0 20px;
+  }
+}
 @media screen and (min-width: 828px){
   .footer__item{
     flex: 1 1 20%;
     align-items: flex-start;
   }
+  
 }
 .footer__title{
   font-family: var(--font-medium);

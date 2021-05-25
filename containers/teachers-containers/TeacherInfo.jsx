@@ -24,16 +24,18 @@ export default function TeacherInfo() {
       <style jsx>
         {`
           .teacherInfo{
-            margin-bottom: 40px;
+            margin-bottom: 2.5rem;
           }
           .teacherInfo__container{
-            max-width: 1600px;
+            max-width: 1640px;
+            padding: 0 0.3125rem;
             margin: 0 auto;
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            justify-content: center;
             background: #FFFFFF;
-            box-shadow: 0px 4.53741px 18.1496px #F2F5FA, 0px 4.53741px 18.1496px #F2F5FA, 0px 4.53741px 18.1496px #F2F5FA;
-            border-radius: 10px;
+            box-shadow: 0px 0.2836rem 1.1343rem #F2F5FA, 0px 0.2836rem 1.1343rem #F2F5FA, 0px 0.2836rem 1.1343rem #F2F5FA;
+            border-radius: 0.625rem;
             position: relative;
           }
           .teacherInfo__img{
@@ -41,34 +43,57 @@ export default function TeacherInfo() {
           }
           .teacherTitle{
             font-family: var(--font-bold);
-            font-size: 32px;
+            font-size: 2rem;
             color: var(--color-crumbs);
-            line-height: 41.6px;
-            letter-spacing: 1.5px;
-            margin-bottom: 5px;
+            line-height: 2.6rem;
+            letter-spacing: 0.0938rem;
+            margin-bottom: 0.3125rem;
           }
           .teacherText{
             font-family: var(--font-regular);
-            font-size: 24px;
-            line-height: 31.2px;
-            letter-spacing: 1.4px;
+            font-size: 1.5rem;
+            line-height: 1.95rem;
+            letter-spacing: 0.0875rem;
             color: rgba(40, 41, 61, 0.5);
-            margin-bottom: 40px;
+            margin-bottom: 2.5rem;
           }
           .teacher__item{
             font-family: var(--font-regular);
             font-size: 1rem;
             color: var(--color-crumbs);
-            line-height: 24px;
-            margin-bottom: 8px;
-          }
-          .teacherInfo__picture{
-            margin-right: 70px;
+            line-height: 1.5rem;
+            margin-bottom: 0.5rem;
           }
           .teacherInfo__label{
             position: absolute;
             top: 10%;
             right: 2%;
+            z-index: -2;
+          }
+          @media screen and (min-width: 728px){
+            .teacherInfo__container{
+              padding: 0;
+            }
+          }
+          @media screen and (min-width: 1140px){
+            .teacherInfo__container{
+              flex-direction: row;
+              padding: 0 1.25rem;
+            }
+            .teacherInfo__picture{
+              margin-right: 4.375rem;
+            }
+          }
+            
+          @media screen and (min-width: 1490px){
+            .teacherInfo__label{
+              z-index: 6;
+            }
+          }
+          @media screen and (min-width: 1490px){
+            .teacherInfo__container{
+              padding: 0;
+            }
           }
         `}
       </style>

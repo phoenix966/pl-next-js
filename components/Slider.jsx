@@ -79,7 +79,7 @@ export default function Slider() {
            align-items: center;
            background: var(--color-back);
            padding-top: 3.125rem;
-           height: 70vh;
+           min-height: 70vh;
            width: 100%;
            border: 1px solid #000;
          }
@@ -87,7 +87,7 @@ export default function Slider() {
            position: relative;
            padding-top: 4rem;
            width: 99%;
-           height: 43vh;
+           min-height: 43vh;
            padding-bottom: 3.125rem;
            margin: 0 auto;
            text-align: center;
