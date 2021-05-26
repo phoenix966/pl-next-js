@@ -2,7 +2,7 @@ import {useEffect,useState} from 'react';
 import {FaChevronDown} from 'react-icons/fa';
 import SpoilerVacancyList from './SpoilerVacancyList';
 
-export default function SpoilerInner({actived,title,par,list}) {
+export default function SpoilerInner({actived,title,par,list,innerClick}) {
   const [isOpen,setIsOpen] = useState(false);
   
   useEffect(()=>{
@@ -11,7 +11,7 @@ export default function SpoilerInner({actived,title,par,list}) {
   
   return (
     <div className='inner'>
-      <h3 className="inner__title">{title} <span className="inner__icon"><FaChevronDown/></span></h3>
+      <h3 className="inner__title">{title} <span onClick={innerClick} className="inner__icon"><FaChevronDown/></span></h3>
       <p className="inner__text">
         {par}
       </p>
@@ -25,27 +25,27 @@ export default function SpoilerInner({actived,title,par,list}) {
           .inner{
             display: ${isOpen ? 'block' : 'none'};
             background: #2575E61A;
-            max-width: 795px;
-            min-height: 485px;
-            padding: 15px 16px 0 16px;
+            max-width: 49.6875rem;
+            min-height: 30.3125rem;
+            padding: 0.9375rem 1rem 0 1rem;
           }
           .inner__title{
             display: flex;
             justify-content: space-between;
             align-items: center;
             font-family: var(--font-vacancy-bold);
-            font-size: 18px;
+            font-size: 1.125rem;
             color: var(--color-crumbs);
-            line-height: 24px;
-            margin-bottom: 25px;
+            line-height: 1.5rem;
+            margin-bottom: 1.5625rem;
           }
           .inner__text{
             font-family: var(--font-vacancy-regular);
             font-size: 1rem;
-            line-height: 24px;
+            line-height: 1.5rem;
             color: var(--color-crumbs);
             background: #fff;
-            padding: 30px;
+            padding: 1.875rem;
           }
           
           .inner__wrapper{

@@ -1,14 +1,18 @@
 import { FaChevronUp, FaChevronDown } from 'react-icons/fa';
 import AccordeonList from './AccordeonList';
-import {useState} from 'react';
+import {useState,useEffect} from 'react';
 
-export default function Accordeon() {
+export default function Accordeon({open}) {
   const [active,setActive] = useState(false);
 
   const makeActive =()=>{
     active ? setActive(false) : setActive(true);
   };
-
+  useEffect (()=>{
+    if(open){
+      setActive(true)
+    }
+  },[])
   return (
     <div className="accordeon">
       <div className="accordeon__inner">
@@ -63,6 +67,17 @@ export default function Accordeon() {
           }
           .inner__icon{
             color: var(--color-crumbs);
+            cursor: pointer;
+          }
+          .inner__chevron{
+            cursor: pointer;
+          }
+          .head__icon{
+            cursor: pointer;
+          }
+          .inner__list{
+            margin: 0;
+            padding: 0;
           }
         `}
       </style>

@@ -17,22 +17,23 @@ export default function vacancy() {
     <div className="wrapper">
       <Layout>
         <section className="crumbs">
-          <BreadCrumbs firstText="Вакансии" />
+          <BreadCrumbs paddingTop="25" marginBottom="25" firstText="Вакансии" />
         </section>
         <section className={css.vacancy__row}>
           <UnderlineTitle
             text="Вакансии"
             color="var(--color-crumbs)"
-            fontSize="42"
+            fontSize="24"
             underWidthProcent="60"
             underHeightPx="8"
             position="20"
+            mediaSize="42"
           />
         </section>
         <section className={css.info}>
           <div className={css.info__container}>
             <div className={css.info__wrapper}>
-              <Spoiler
+              <Spoiler open={true}
                 par='В команду преподавателей требуется ментор курса Back End разработки.
                   В связи с расширением преподавательского состава, проходит набор на должность Мастера производственного обучения по профессии Back - End разработчик.' title="Мастер группы Веб-программирование"
                 text="Мастер группы Специалист по сетям связи и системам коммутаций"

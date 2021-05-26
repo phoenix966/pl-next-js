@@ -8,9 +8,9 @@ export default function SpoilerVacancyItem({text}) {
             .inner__item{
               font-family: var(--font-vacancy-medium);
               font-size: 1rem;
-              line-height: 24px;
+              line-height: 1.5rem;
               color: #1A1A1A;
-              margin-bottom: 8px;
+              margin-bottom: 0.5rem;
             }
           `}
         </style>
