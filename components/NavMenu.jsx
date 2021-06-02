@@ -91,7 +91,7 @@ export default function NavMenu({show}) {
           top: 8.125rem;
           right: 0;
           z-index: 90;
-          width: 25rem;
+          width: 100vw;
           height: 100vh;
           background: #FFFFFF;
           box-shadow: inset 0 0.125rem 0 #2575E6;
@@ -111,6 +111,7 @@ export default function NavMenu({show}) {
         }
         .nav__menu{
           height: 100%;
+          width: 100%;
           display: flex;
           justify-content: flex-start;
           padding-top: 1.875rem;
@@ -153,14 +154,23 @@ export default function NavMenu({show}) {
         .nav__row--main .nav__link span{
           position: absolute;
           top: 0;
-          left: -2.5rem;
+          left: -1.5rem;
         }
         @media screen and (min-width: 428px){
-          .nav__menu{
-            align-items: flex-start;
-          }
           .nav__row{
             padding-left: 2.5rem;
+          }
+        }
+        @media screen and (min-width: 728px){
+          .nav.active{
+            width: unset;
+          }
+          .nav{
+            width: 25rem;
+          }
+          .nav__menu{
+            align-items: flex-start;
+            width: 25vw;
           }
         }
         

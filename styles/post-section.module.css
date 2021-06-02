@@ -46,9 +46,6 @@
     display: flex;
     flex-wrap: wrap;
   }
-  .postSection__container{
-    padding: 0;
-  }
 }
 @media screen and (min-width: 1640px){
   .post__columns{

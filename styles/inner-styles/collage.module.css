@@ -62,7 +62,7 @@
   height: 26.25rem;
   margin: 0.9375rem auto;
 }
-@media screen and (min-width: 1366px){
+@media screen and (min-width: 1280px){
   .collage__wrapper{
     display: grid;
     width: 100%;

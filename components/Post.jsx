@@ -72,8 +72,8 @@ export default function Post({ imgSrc, title, user, clock, rating }) {
           }
           @media screen and (min-width: 728px){
             .post{
-              width: 40%;
-              height: 40.9375rem;
+              flex-basis: 40%;
+              max-height: 30.9375rem;
             }
             .post__title{
               line-height: 2.5rem;
@@ -89,10 +89,16 @@ export default function Post({ imgSrc, title, user, clock, rating }) {
             height: 50%;
           }
           }
+          @media screen and (min-width: 1140px){
+            .post{
+              flex: 0 1 30%;
+              max-height: 30.9375rem;
+            }
+          }
           @media screen and (min-width: 1640px){
             .post{
-              width: 31%;
-              height: 40.9375rem;
+              flex: 0 1 31%;
+              min-height: 40.9375rem;
             }
             .post__picture{
               height: 60%;
