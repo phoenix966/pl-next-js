@@ -2,14 +2,14 @@ import style from '../styles/news.module.css'
 import UnderlineTitle from '../components/UnderlineTitle'
 import Button from '../components/Button'
 import NewsPost from '../components/NewsPost'
-import {useState} from 'react'
+// import {useState} from 'react'
 
-export default function News() {
-  const [news,setNews] = useState([
-    {title:'Состоялось открытие нового It направления',imgSrc:'post/post.jpg',view:'2454',date:'14/05/2021'},
-    {title:'Состоялось открытие нового It направления-1',imgSrc:'post/post.jpg',view:'2454',date:'16/04/2021'},
-    {title:'Состоялось открытие нового It направления-2',imgSrc:'post/post.jpg',view:'2454',date:'19/04/2021'}
-  ])
+export default function News({dataProps}) {
+  // const [news,setNews] = useState([
+  //   {title:'Состоялось открытие нового It направления',imgSrc:'post/post.jpg',view:'2454',date:'14/05/2021'},
+  //   {title:'Состоялось открытие нового It направления-1',imgSrc:'post/post.jpg',view:'2454',date:'16/04/2021'},
+  //   {title:'Состоялось открытие нового It направления-2',imgSrc:'post/post.jpg',view:'2454',date:'19/04/2021'}
+  // ])
   return (
     <div className={style.news}> 
       <div className={style.news__container}>
@@ -25,13 +25,13 @@ export default function News() {
             />
           </div>
           <ul className={style.news__columns}>
-            {news.map((post)=>{
+            {dataProps.map((post)=>{
               return <NewsPost 
                   title={post.title}
-                  imgSrc={post.imgSrc}
+                  imgSrc={post.picture}
                   view={post.view}
                   date={post.date}
-                  key={post.date}
+                  key={post.id}
               />
             })}
           </ul>

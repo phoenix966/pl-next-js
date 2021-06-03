@@ -6,7 +6,7 @@ import News from '../containers/News'
 import Partners from '../containers/Partners'
 import PostSection from '../containers/PostSection'
 
-export default function Home({data}) {
+export default function Home({data,news}) {
   // console.log(data);
   return (
     <>
@@ -21,7 +21,7 @@ export default function Home({data}) {
           <Main/>
           <PostSection dataProf={data}/>
           <Comments/>
-          <News/>
+          <News dataProps={news}/>
           <Partners/>
         </Layout>
       </div>
@@ -33,7 +33,9 @@ export default function Home({data}) {
 export async function getServerSideProps(context){
   const res = await fetch('http://localhost:1337/professions')
   const data = await res.json()
+  const result = await fetch('http://localhost:1337/news-columns')
+  const news = await result.json()
   return{
-    props:{data},
+    props:{data,news},
   }
 }
